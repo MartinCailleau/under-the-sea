@@ -2,7 +2,7 @@
 /game_jam_stunt/Temp
 /game_jam_stunt/Assembly-CSharp.csproj
 /game_jam_stunt/Assembly-CSharp-vs.csproj
-/game_jam_stunt/Speed Defender.sln
-/game_jam_stunt/Speed Defender.userprefs
-/game_jam_stunt/Speed Defender-csharp.sln
+/game_jam_stunt/*.sln
+/game_jam_stunt/*.userprefs
+/game_jam_stunt/*.sln
 *.DS_Store
