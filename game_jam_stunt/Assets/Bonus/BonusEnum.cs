@@ -1,0 +1,1 @@
+﻿public enum BonusName{IEM,LightFreeze,Bump,Grapin}
