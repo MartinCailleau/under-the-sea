@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Obstacle {
 	public Obstacle(GameObject prefab, Vector2 pos){
 		this.prefab = prefab;
@@ -14,9 +15,12 @@ public class PresetsLoad : MonoBehaviour {
 
 	//Prefabs Obstacles
 	public GameObject debrisGros, debrisPetit, grenaille, debrisPetitBiais, baudroie, 
-		cachalotHorizontal, barreBiaisGauche, epaveBasGauche, bonus, 
+		cachalotHorizontal, barreBiaisGauche, epaveBasGauche, 
 	barreBiaisDroit, cachalotBiaisGauche, epaveHautDroit, epaveBasDroit, cachalotBiaisDroit,
 	barre, epaveHautGauche;
+	GameObject bonus;
+
+	public GameObject[] bonusList;
 
 	//Bandes
 	ArrayList bande1= new ArrayList();
@@ -41,6 +45,8 @@ public class PresetsLoad : MonoBehaviour {
 	GameObject detector;
 
 	void Start(){
+		bonus = new GameObject ();
+
 		bande1.Add(new Obstacle(debrisGros, new Vector2(9, 9)));
 		bande1.Add(new Obstacle(debrisPetit, new Vector2(20, 8)));
 		bande1.Add(new Obstacle(grenaille, new Vector2(25, 1)));
@@ -190,15 +196,29 @@ public class PresetsLoad : MonoBehaviour {
 
 	void instanciateBandeA(ArrayList bande){
 		foreach(Obstacle obs in bande){
+
 			Vector2 posCorrected = new Vector2(obs.pos.x/2.1f, (16-obs.pos.y)+10);
-			GameObject.Instantiate(obs.prefab, (Vector3)posCorrected, obs.prefab.transform.rotation);
+			if(obs.prefab == bonus){
+				int nbRand = Random.Range(0,bonusList.Length);
+				Debug.Log(nbRand);
+				obs.prefab = bonusList[nbRand];
+			}
+			GameObject go = GameObject.Instantiate(obs.prefab, (Vector3)posCorrected, obs.prefab.transform.rotation) as GameObject;
+			go.name = obs.prefab.name;
+
 		}
 	}
 
 	void instanciateBandeB(ArrayList bande){
 		foreach(Obstacle obs in bande){
 			Vector2 posCorrected = new Vector2((obs.pos.x-50)/2.5f, (16-obs.pos.y)+10); //pour y on inverse l'axe et on recule un peu pour leurs donner un retrait
-			GameObject.Instantiate(obs.prefab, (Vector3)posCorrected, obs.prefab.transform.rotation);
+			if(obs.prefab == bonus){
+				int nbRand = Random.Range(0,bonusList.Length);
+				Debug.Log(nbRand);
+				obs.prefab = bonusList[nbRand];
+			}
+			GameObject go = GameObject.Instantiate(obs.prefab, (Vector3)posCorrected, obs.prefab.transform.rotation) as GameObject;
+			go.name = obs.prefab.name;
 		}
 	}
 

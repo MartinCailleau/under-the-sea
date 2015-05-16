@@ -16,7 +16,7 @@ public class BonusManager : MonoBehaviour {
 	}
 
 	public void setBonusType(string bonusType){
-		Debug.Log ("Youpi, I've got a AMAZING POWER UP!");
+		Debug.Log ("Youpi, I've got a AMAZING POWER UP!"+bonusType);
 		this.bonusType = bonusType;
 		bonusOn = true;
 	}
@@ -24,7 +24,7 @@ public class BonusManager : MonoBehaviour {
 	public void useBonus(){
 		if(bonusOn){
 			switch (bonusType) {
-			case "lightFreeze":lightFreeze();
+			case "LightFreeze":lightFreeze();
 			break;
 			case "IEM":iem();
 			break;
@@ -35,12 +35,13 @@ public class BonusManager : MonoBehaviour {
 	}
 
 	public void lightFreeze(){
-
+		Debug.Log ("FREEZE!");
 		gameObject.AddComponent<LightFreeze>();
 
 	}
 
 	public void iem(){
+		Debug.Log ("IEM!");
 		gameObject.AddComponent<IEM> ();
 		gameObject.GetComponent<IEM> ().initIEM(2,gameObject);
 	}
