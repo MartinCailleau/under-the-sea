@@ -110,12 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 100, y: 100}
-<<<<<<< HEAD:game_jam_stunt/Assets/Player/player1.prefab
   maxSpeed: 10
   playerId: 1
-=======
-  maxSpeed: 3
->>>>>>> 4a096fee69899cbe48aedce18dba4eca2b47a7db:game_jam_stunt/Assets/Player/player.prefab
 --- !u!212 &21241234
 SpriteRenderer:
   m_ObjectHideFlags: 1
