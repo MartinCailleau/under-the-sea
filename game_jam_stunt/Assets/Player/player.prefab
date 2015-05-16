@@ -30,6 +30,7 @@ GameObject:
   - 50: {fileID: 5044170}
   - 95: {fileID: 9589324}
   - 114: {fileID: 11451266}
+  - 114: {fileID: 11467146}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -139,7 +140,7 @@ Light:
   m_Type: 0
   m_Color: {r: 0, g: 1, b: .0896551609, a: 1}
   m_Intensity: 8
-  m_Range: 10
+  m_Range: 15
   m_SpotAngle: 90
   m_CookieSize: 10
   m_Shadows:
@@ -185,6 +186,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73902ef7ed7cbf04a9e70a5adcf4157b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11467146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9827f9c979fac43b29a07f5f615477e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonusType: 
+  bonusOn: 0
 --- !u!212 &21262386
 SpriteRenderer:
   m_ObjectHideFlags: 1

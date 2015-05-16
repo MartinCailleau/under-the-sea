@@ -23,12 +23,6 @@ public class Controle : MonoBehaviour {
 		anim.SetFloat("speedX",inputX);
 		anim.SetFloat("speedY",inputY);
 
-		Vector3 move = new Vector3 (
-			speed.x * inputX,
-			speed.y * inputY,
-			0
-		);
-		move *= Time.deltaTime;
 		//rigidbody.AddTorque (-inputRotate*2);
 		rigidbody.AddForce (new Vector2(inputX*speed.x,inputY*speed.y));
 
@@ -36,7 +30,9 @@ public class Controle : MonoBehaviour {
 			rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
 		}
 
-	//	transform.Translate(move);
+		if (Input.GetButtonDown("A"+playerId)) {
+			gameObject.GetComponent<BonusManager>().useBonus();
+		}
 
 	}
 
