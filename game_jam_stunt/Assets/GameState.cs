@@ -1,0 +1,1 @@
+public enum GameState{ NullState, Intro, MainMenu, Game, Pause}
