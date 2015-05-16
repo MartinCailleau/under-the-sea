@@ -18,6 +18,8 @@ public class Controle : MonoBehaviour {
 
 		float inputX = Input.GetAxis ("Horizontal");
 		float inputY = Input.GetAxis ("Vertical");
+		//float inputRotate = Input.GetAxis("Torque");
+
 		anim.SetFloat("speedX",inputX);
 		anim.SetFloat("speedY",inputY);
 
@@ -27,9 +29,9 @@ public class Controle : MonoBehaviour {
 			0
 		);
 		move *= Time.deltaTime;
-
+		//rigidbody.AddTorque (-inputRotate*2);
 		rigidbody.AddForce (new Vector2(inputX*speed.x,inputY*speed.y));
-		Debug.Log (rigidbody.velocity.magnitude);
+
 		if (rigidbody.velocity.magnitude > maxSpeed) {
 			rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
 		}
