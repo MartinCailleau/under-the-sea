@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour {
 				activePlayers(true);
 			}
 		}
+
 		Debug.Log (gameStateManager.gameState);
 	}
 
@@ -42,4 +43,5 @@ public class GameManager : MonoBehaviour {
 			gameStateManager.gameState = GameState.End;
 		}
 	}
+	
 }
