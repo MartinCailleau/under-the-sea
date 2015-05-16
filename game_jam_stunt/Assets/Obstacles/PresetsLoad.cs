@@ -16,7 +16,7 @@ public class PresetsLoad : MonoBehaviour {
 	public GameObject debrisGros, debrisPetit, grenaille, debrisPetitBiais, baudroie, 
 		cachalotHorizontal, barreBiaisGauche, epaveBasGauche, bonus, 
 	barreBiaisDroit, cachalotBiaisGauche, epaveHautDroit, epaveBasDroit, cachalotBiaisDroit,
-	barre, epaveHautGauche;
+	barre, barreHorizontale, epaveHautGauche;
 
 	//Bandes
 	ArrayList bande1= new ArrayList();
@@ -41,6 +41,7 @@ public class PresetsLoad : MonoBehaviour {
 	GameObject detector;
 
 	void Start(){
+
 		bande1.Add(new Obstacle(debrisGros, new Vector2(9, 9)));
 		bande1.Add(new Obstacle(debrisPetit, new Vector2(20, 8)));
 		bande1.Add(new Obstacle(grenaille, new Vector2(25, 1)));
@@ -175,15 +176,15 @@ public class PresetsLoad : MonoBehaviour {
 	}
 
 	void selection(){
-		int rand = Random.Range (0,15);
+		int rand = Random.Range (0,3);
 		instanciateBandeA((ArrayList)bandes[rand]);
 
-		rand = Random.Range(0,15);
+		rand = Random.Range(0,3);
 		instanciateBandeB((ArrayList)bandes[rand]);
 
 		//Detecteur
 		detector = new GameObject();
-		detector.transform.position = new Vector2(0, 12);
+		detector.transform.position = new Vector2(0, 15);
 		Rigidbody2D rg = detector.AddComponent<Rigidbody2D>();
 		rg.mass = 1000;
 		rg.drag = 5;

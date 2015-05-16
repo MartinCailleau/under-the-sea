@@ -54,6 +54,7 @@ MonoBehaviour:
   epaveBasDroit: {fileID: 182214, guid: ef5b76c265d7389429d9a806ef484994, type: 2}
   cachalotBiaisDroit: {fileID: 109658, guid: cd1611bf3a379f646a7d343f00e17576, type: 2}
   barre: {fileID: 139012, guid: 5189b7bec7454ea4a8df6668128da825, type: 2}
+  barreHorizontale: {fileID: 116678, guid: 0bbfeff44748ca849a2bddcfe9cd24be, type: 2}
   epaveHautGauche: {fileID: 130058, guid: 5052ef68a6aa55d43bc6eac9f748045e, type: 2}
 --- !u!1001 &100100000
 Prefab:
