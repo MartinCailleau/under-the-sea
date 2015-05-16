@@ -1,0 +1,38 @@
+﻿{
+	'bande1': {
+		'obj1':{
+			'name' : 'debrisGros,
+			position : [9, 9]
+		}
+,
+		'obj2':{
+			'name' : 'debrisPetit,
+			position : [20, 8]
+		}
+,
+		'obj3':{
+			'name' : 'grenaille,
+			position : [25, 1]
+		}
+,
+		'obj4':{
+			'name' : 'grenaille,
+			position : [27, 9]
+		}
+,
+		'obj5':{
+			'name' : 'grenaille,
+			position : [33, 1]
+		}
+,
+		'obj6':{
+			'name' : 'grenaille,
+			position : [35, 9]
+		}
+,
+		'obj7':{
+			'name' : 'grenaille,
+			position : [41, 1]
+		}
+	}
+}
