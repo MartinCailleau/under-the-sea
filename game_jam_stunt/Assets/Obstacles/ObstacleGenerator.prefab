@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &117268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 455202}
+  - 114: {fileID: 11451054}
+  m_Layer: 0
+  m_Name: ObstacleGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &455202
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .600000024, y: 2.9000001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11451054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd63e0644c52aa84194d29e6795b518c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debrisGros: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  debrisPetit: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  grenaille: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  debrisPetitBiais: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  baudroie: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  cachalotHorizontal: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  barreBiaisGauche: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  epaveBasGauche: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  bonus: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  barreBiaisDroit: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  cachalotBiaisGauche: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  epaveHautDroit: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  epaveBasDroit: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  cachalotBiaisDroit: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  barre: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  epaveHautGauche: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 117268}
+  m_IsPrefabParent: 1
