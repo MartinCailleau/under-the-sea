@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 100, y: 100}
-  maxSpeed: 10
+  maxSpeed: 5
   playerId: 1
 --- !u!114 &11451266
 MonoBehaviour:

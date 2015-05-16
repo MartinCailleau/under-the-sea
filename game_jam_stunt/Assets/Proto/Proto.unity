@@ -582,7 +582,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5057896, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
       propertyPath: m_LinearDrag
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
       propertyPath: m_Name
@@ -704,7 +704,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1805,7 +1805,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 402696, guid: 9eaff2bd62935b14db54f6c840ba17f5, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 432798, guid: 9eaff2bd62935b14db54f6c840ba17f5, type: 2}
       propertyPath: m_LocalPosition.z
