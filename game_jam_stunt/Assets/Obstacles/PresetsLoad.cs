@@ -181,8 +181,9 @@ public class PresetsLoad : MonoBehaviour {
 		rand = Random.Range(0,15);
 		instanciateBandeB((ArrayList)bandes[rand]);
 
+		//Detecteur
 		detector = new GameObject();
-		detector.transform.position = new Vector2(0, 15);
+		detector.transform.position = new Vector2(0, 12);
 		Rigidbody2D rg = detector.AddComponent<Rigidbody2D>();
 		rg.mass = 1000;
 		rg.drag = 5;
@@ -190,14 +191,14 @@ public class PresetsLoad : MonoBehaviour {
 
 	void instanciateBandeA(ArrayList bande){
 		foreach(Obstacle obs in bande){
-			Vector2 posCorrected = new Vector2(obs.pos.x/2.1f, (16-obs.pos.y)+10);
+			Vector2 posCorrected = new Vector3(obs.pos.x/2.1f, (16-obs.pos.y)+10, -2);
 			GameObject.Instantiate(obs.prefab, (Vector3)posCorrected, obs.prefab.transform.rotation);
 		}
 	}
 
 	void instanciateBandeB(ArrayList bande){
 		foreach(Obstacle obs in bande){
-			Vector2 posCorrected = new Vector2((obs.pos.x-50)/2.5f, (16-obs.pos.y)+10); //pour y on inverse l'axe et on recule un peu pour leurs donner un retrait
+			Vector2 posCorrected = new Vector3((obs.pos.x-50)/2.5f, (16-obs.pos.y)+10, -2); //pour y on inverse l'axe et on recule un peu pour leurs donner un retrait
 			GameObject.Instantiate(obs.prefab, (Vector3)posCorrected, obs.prefab.transform.rotation);
 		}
 	}
