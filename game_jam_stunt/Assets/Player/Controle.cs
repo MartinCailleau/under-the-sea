@@ -3,10 +3,14 @@ using System.Collections;
 
 public class Controle : MonoBehaviour {
 	Animator anim;
+	Rigidbody2D rigidbody;
 	public Vector2 speed = new Vector2(1,1);
+	public float maxSpeed = 3;
+
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
+		rigidbody = gameObject.GetComponent<Rigidbody2D> ();
 	}
 	
 	// Update is called once per frame
@@ -24,7 +28,13 @@ public class Controle : MonoBehaviour {
 		);
 		move *= Time.deltaTime;
 
-		transform.Translate (move);
+		rigidbody.AddForce (new Vector2(inputX*speed.x,inputY*speed.y));
+		Debug.Log (rigidbody.velocity.magnitude);
+		if (rigidbody.velocity.magnitude > maxSpeed) {
+			rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
+		}
+
+	//	transform.Translate(move);
 
 	}
 
