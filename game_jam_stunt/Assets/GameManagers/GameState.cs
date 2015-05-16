@@ -1,1 +1,1 @@
-public enum GameState{ NullState, Intro, MainMenu, Game, Pause}
+public enum GameState{ NullState, Intro, MainMenu, Game, Pause, End}
