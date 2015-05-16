@@ -10,11 +10,11 @@ GameObject:
   - 4: {fileID: 449738}
   - 212: {fileID: 21241234}
   - 114: {fileID: 11440192}
-  - 50: {fileID: 5019430}
   - 60: {fileID: 6092750}
-  - 95: {fileID: 9558886}
+  - 50: {fileID: 5094818}
+  - 95: {fileID: 9508936}
   m_Layer: 0
-  m_Name: player
+  m_Name: player1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,17 +32,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5019430
+--- !u!50 &5094818
 Rigidbody2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156638}
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_LinearDrag: 2
+  m_AngularDrag: 2
   m_GravityScale: 0
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -81,7 +81,7 @@ PolygonCollider2D:
       - {x: 1.255, y: -1.42499995}
       - {x: 1.28499997, y: -1.42499995}
       - {x: 1.28499997, y: 1.42499995}
---- !u!95 &9558886
+--- !u!95 &9508936
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -110,6 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 100, y: 100}
+  maxSpeed: 10
+  playerId: 1
 --- !u!212 &21241234
 SpriteRenderer:
   m_ObjectHideFlags: 1

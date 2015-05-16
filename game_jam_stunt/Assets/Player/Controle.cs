@@ -6,7 +6,7 @@ public class Controle : MonoBehaviour {
 	Rigidbody2D rigidbody;
 	public Vector2 speed = new Vector2(1,1);
 	public float maxSpeed = 3;
-
+	public int playerId;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
@@ -16,8 +16,8 @@ public class Controle : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		float inputX = Input.GetAxis ("Horizontal");
-		float inputY = Input.GetAxis ("Vertical");
+		float inputX = Input.GetAxis ("Horizontal"+playerId);
+		float inputY = Input.GetAxis ("Vertical"+playerId);
 		//float inputRotate = Input.GetAxis("Torque");
 
 		anim.SetFloat("speedX",inputX);
@@ -41,8 +41,8 @@ public class Controle : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-		float lastInputX = Input.GetAxis("Horizontal");
-		float lastInputY = Input.GetAxis("Vertical");
+		float lastInputX = Input.GetAxis("Horizontal"+playerId);
+		float lastInputY = Input.GetAxis("Vertical"+playerId);
 
 		if (lastInputX != 0 || lastInputY != 0) {
 			anim.SetBool ("walking", true);
