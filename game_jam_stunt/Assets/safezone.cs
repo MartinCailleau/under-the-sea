@@ -14,7 +14,7 @@ public class safezone : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D collider){
-		Debug.Log (collider.gameObject);
+
 		if (collider.gameObject.tag == "Obstacle") {
 			GameObject.Destroy(collider.gameObject);
 		}

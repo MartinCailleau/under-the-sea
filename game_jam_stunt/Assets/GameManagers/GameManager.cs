@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		gameStateManager = GameStateManager.Instance;
 		players = GameObject.FindGameObjectsWithTag("Player");
+		gameStateManager.gameState = GameState.Game;
 	}
 	
 	// Update is called once per frame
@@ -26,6 +27,15 @@ public class GameManager : MonoBehaviour {
 	public void activePlayers(bool active){
 		foreach(GameObject player in players){
 			player.GetComponent<Controle>().enabled = active;
+		}
+	}
+
+	public void playerWin(int playerId){
+		Debug.Log (playerId);
+		if (gameStateManager.gameState == GameState.Game) {
+			gameStateManager.gameState = GameState.End;
+			Debug.Log("Player "+playerId+"win !");
+			activePlayers(false);
 		}
 	}
 }
