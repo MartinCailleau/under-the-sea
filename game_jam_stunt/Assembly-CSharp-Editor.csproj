@@ -46,19 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\2DVLS\Core\Editor\Light2DEditor.cs" />
-     <Compile Include="Assets\2DVLS\Core\Editor\Light2DMenu.cs" />
-     <None Include="Assets\Unity_4_3_Source\Shaders (WIP)\2DVLS_Cutout (2-Sided).shader" />
-     <None Include="Assets\Unity_4_3_Source\Shaders (WIP)\2DVLS_Diffuse (2-Sided).shader" />
-     <None Include="Assets\2DVLS\Core\Shaders\2DVLS_Diffuse.shader" />
-     <None Include="Assets\2DVLS\READ-ME.txt" />
-     <None Include="Assets\Unity_4_3_Source\Shaders (WIP)\2DVLS_Light.shader" />
-     <None Include="Assets\Unity_4_3_Source\Shaders (WIP)\2DVLS_Cutout.shader" />
-     <None Include="Assets\2DVLS\Core\Shaders\2DVLS_Cutout (2-Sided).shader" />
-     <None Include="Assets\2DVLS\Core\Shaders\2DVLS_Light.shader" />
-     <None Include="Assets\2DVLS\Core\Shaders\2DVLS_Diffuse (2-Sided).shader" />
-     <None Include="Assets\2DVLS\Core\Shaders\2DVLS_Cutout.shader" />
-     <None Include="Assets\Unity_4_3_Source\Shaders (WIP)\2DVLS_Diffuse.shader" />
+     <Compile Include="Assets\JSON\Editor\JSONChecker.cs" />
+     <None Include="Assets\JSON\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
