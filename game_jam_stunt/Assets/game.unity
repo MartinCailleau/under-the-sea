@@ -225,6 +225,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1001 &852418981
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 457674, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457674, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457674, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457674, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457674, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457674, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457674, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 457674, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487490, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: spawn1
+      value: 
+      objectReference: {fileID: 1529867623}
+    - target: {fileID: 11487490, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: spawn2
+      value: 
+      objectReference: {fileID: 295332079}
+    - target: {fileID: 11487490, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: spawn3
+      value: 
+      objectReference: {fileID: 788742146}
+    - target: {fileID: 11487490, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: spawn4
+      value: 
+      objectReference: {fileID: 1375133428}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1375133428
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,60 +337,3 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
---- !u!1 &1948329385
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1948329387}
-  - 114: {fileID: 1948329386}
-  - 114: {fileID: 1948329388}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1948329386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1948329385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05acecf43561848d88c4e90fb0b5c0d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1948329387
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1948329385}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
---- !u!114 &1948329388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1948329385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee2a646b9e66945dd9b549330deeed1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabPlayer: {fileID: 156638, guid: 731ad8cb9c00641b990c403cd2bfd927, type: 2}
-  spawn1: {fileID: 1529867623}
-  spawn2: {fileID: 295332079}
-  spawn3: {fileID: 0}
-  spawn4: {fileID: 0}
-  playerOn: 
