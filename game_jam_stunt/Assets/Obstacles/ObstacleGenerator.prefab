@@ -39,22 +39,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd63e0644c52aa84194d29e6795b518c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debrisGros: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  debrisPetit: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  grenaille: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  debrisPetitBiais: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  baudroie: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  cachalotHorizontal: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  barreBiaisGauche: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  epaveBasGauche: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  bonus: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  barreBiaisDroit: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  cachalotBiaisGauche: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  epaveHautDroit: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  epaveBasDroit: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  cachalotBiaisDroit: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  barre: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
-  epaveHautGauche: {fileID: 113976, guid: de0dc9d0b82011243a30f64423e0e9c3, type: 2}
+  debrisGros: {fileID: 118164, guid: e7d5b02f24f28e9458717b156d0442d9, type: 2}
+  debrisPetit: {fileID: 158784, guid: 1ad22dada70e7974a9d50ebd8fb5e4e9, type: 2}
+  grenaille: {fileID: 136828, guid: 20e7c72d84d475b49b81ee3c17610753, type: 2}
+  debrisPetitBiais: {fileID: 110814, guid: 0159126ed01bcd1439724b862a3fb828, type: 2}
+  baudroie: {fileID: 105176, guid: 97c77b1e7628b5048b4b8fa124a2104d, type: 2}
+  cachalotHorizontal: {fileID: 197008, guid: a97b4bca0b6d4b44ebd248abc86e4c72, type: 2}
+  barreBiaisGauche: {fileID: 111180, guid: d0034636fc5f41145bb16274c6c3744d, type: 2}
+  epaveBasGauche: {fileID: 164472, guid: d273ef2122691944d99b412e0f60937f, type: 2}
+  bonus: {fileID: 138828, guid: bd0260901fa455a4a8703eeacc21dc95, type: 2}
+  barreBiaisDroit: {fileID: 124552, guid: bfd37d904fadb234bb48f8b33e6e8807, type: 2}
+  cachalotBiaisGauche: {fileID: 111694, guid: cc2a36f2e75d7104086d5b56b2dba365, type: 2}
+  epaveHautDroit: {fileID: 187142, guid: 9a9c0b510f05d1d4a990e43b67f90f19, type: 2}
+  epaveBasDroit: {fileID: 182214, guid: ef5b76c265d7389429d9a806ef484994, type: 2}
+  cachalotBiaisDroit: {fileID: 109658, guid: cd1611bf3a379f646a7d343f00e17576, type: 2}
+  barre: {fileID: 139012, guid: 5189b7bec7454ea4a8df6668128da825, type: 2}
+  epaveHautGauche: {fileID: 130058, guid: 5052ef68a6aa55d43bc6eac9f748045e, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
