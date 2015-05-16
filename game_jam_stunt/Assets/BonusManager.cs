@@ -26,6 +26,8 @@ public class BonusManager : MonoBehaviour {
 			switch (bonusType) {
 			case "lightFreeze":lightFreeze();
 			break;
+			case "IEM":iem();
+			break;
 			}
 			bonusType = "";
 			bonusOn = false;
@@ -36,5 +38,10 @@ public class BonusManager : MonoBehaviour {
 
 		gameObject.AddComponent<LightFreeze>();
 
+	}
+
+	public void iem(){
+		gameObject.AddComponent<IEM> ();
+		gameObject.GetComponent<IEM> ().initIEM(2,gameObject);
 	}
 }
