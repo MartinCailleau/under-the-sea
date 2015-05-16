@@ -6,7 +6,8 @@ public class RespawnPlayer : MonoBehaviour {
 	GameObject respawnPoint;
 
 	void Start(){
-		respawnPoint = GameObject.Find("spawn1");
+
+		respawnPoint = GameObject.Find("spawn"+gameObject.GetComponent<Controle>().playerId	);
 	}
 
 	void OnCollisionEnter2D(Collision2D c){
