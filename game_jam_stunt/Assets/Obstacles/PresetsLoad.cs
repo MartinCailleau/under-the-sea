@@ -187,8 +187,9 @@ public class PresetsLoad : MonoBehaviour {
 		rand = Random.Range(0,15);
 		instanciateBandeB((ArrayList)bandes[rand]);
 
+		//Detecteur
 		detector = new GameObject();
-		detector.transform.position = new Vector2(0, 15);
+		detector.transform.position = new Vector2(0, 12);
 		Rigidbody2D rg = detector.AddComponent<Rigidbody2D>();
 		rg.mass = 1000;
 		rg.drag = 5;
@@ -219,6 +220,7 @@ public class PresetsLoad : MonoBehaviour {
 			}
 			GameObject go = GameObject.Instantiate(obs.prefab, (Vector3)posCorrected, obs.prefab.transform.rotation) as GameObject;
 			go.name = obs.prefab.name;
+
 		}
 	}
 
