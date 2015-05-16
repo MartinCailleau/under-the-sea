@@ -7,12 +7,13 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		gameStateManager = GameStateManager.Instance;
-		players = GameObject.FindGameObjectsWithTag("Player");
+
 		gameStateManager.gameState = GameState.Game;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		players = GameObject.FindGameObjectsWithTag("Player");
 		if (Input.GetKeyDown(KeyCode.Escape)) {
 			if(gameStateManager.gameState != GameState.Pause){
 				gameStateManager.gameState = GameState.Pause;
@@ -22,20 +23,23 @@ public class GameManager : MonoBehaviour {
 				activePlayers(true);
 			}
 		}
+		Debug.Log (gameStateManager.gameState);
 	}
 
 	public void activePlayers(bool active){
+
 		foreach(GameObject player in players){
+
 			player.GetComponent<Controle>().enabled = active;
 		}
 	}
 
 	public void playerWin(int playerId){
-		Debug.Log (playerId);
 		if (gameStateManager.gameState == GameState.Game) {
-			gameStateManager.gameState = GameState.End;
+
 			Debug.Log("Player "+playerId+"win !");
 			activePlayers(false);
+			gameStateManager.gameState = GameState.End;
 		}
 	}
 }
