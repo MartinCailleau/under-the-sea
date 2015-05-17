@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Controle : MonoBehaviour {
 	Animator anim;
+	Animator animNumber;
 	Rigidbody2D rigidbody;
 	public Vector2 speed = new Vector2(1,1);
 	public float maxSpeed = 3;
@@ -10,6 +11,7 @@ public class Controle : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
+		animNumber = transform.FindChild ("Number").GetComponent<Animator>();
 		rigidbody = gameObject.GetComponent<Rigidbody2D> ();
 	}
 	
@@ -21,7 +23,7 @@ public class Controle : MonoBehaviour {
 		//float inputRotate = Input.GetAxis("Torque");
 
 		anim.SetFloat("speedX",inputX);
-
+		animNumber.SetFloat("speedX",inputX);
 		//rigidbody.AddTorque (-inputRotate*2);
 		rigidbody.AddForce (new Vector2(inputX*speed.x,inputY*speed.y));
 
