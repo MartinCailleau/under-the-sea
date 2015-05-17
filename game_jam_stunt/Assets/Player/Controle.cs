@@ -21,7 +21,6 @@ public class Controle : MonoBehaviour {
 		//float inputRotate = Input.GetAxis("Torque");
 
 		anim.SetFloat("speedX",inputX);
-		anim.SetFloat("speedY",inputY);
 
 		//rigidbody.AddTorque (-inputRotate*2);
 		rigidbody.AddForce (new Vector2(inputX*speed.x,inputY*speed.y));
@@ -36,31 +35,4 @@ public class Controle : MonoBehaviour {
 
 	}
 
-	void FixedUpdate(){
-		float lastInputX = Input.GetAxis("Horizontal"+playerId);
-		float lastInputY = Input.GetAxis("Vertical"+playerId);
-
-		if (lastInputX != 0 || lastInputY != 0) {
-			anim.SetBool ("walking", true);
-		 
-			if (lastInputX > 0) {
-				anim.SetFloat ("lastMoveX", 1f);
-			} else if (lastInputX < 0) {
-				anim.SetFloat ("lastMoveX", -1f);
-			} else {
-				anim.SetFloat ("lastMoveX", 0f);
-			}
-
-			if (lastInputY > 0) {
-				anim.SetFloat ("lastMoveY", 1f);
-			} else if (lastInputY < 0) {
-				anim.SetFloat ("lastMoveY", -1f);
-			} else {
-				anim.SetFloat ("lastMoveY", 0f);
-			}
-		}
-		else {
-			anim.SetBool ("walking",false);
-		}
-	}
 }
