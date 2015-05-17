@@ -5,12 +5,12 @@ public class Bumper : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		StartCoroutine (waitAndDetroy (0.5f));
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	IEnumerator waitAndDetroy(float waitTime) {
+		yield return new WaitForSeconds(waitTime);
+		Destroy (gameObject);
 	}
 
 	void OnTriggerStay2D(Collider2D collider){
@@ -22,6 +22,8 @@ public class Bumper : MonoBehaviour {
 			float wearoff = 1 - (direction.magnitude / 10);
 			collider.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 5000 * wearoff);
 			Destroy(gameObject);
+		}else if(collider.gameObject.tag == "Obstacle"){
+			collider.gameObject.GetComponent<ObstacleBehavior>().detroyObstacle();
 		}
 	}
 }

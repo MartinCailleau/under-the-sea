@@ -31,6 +31,8 @@ public class BonusManager : MonoBehaviour {
 			break;
 			case "Bumper":Bumper();
 			break;
+			case "Grappin":grappin();
+			break;
 			}
 			bonusType = "";
 			bonusOn = false;
@@ -45,7 +47,6 @@ public class BonusManager : MonoBehaviour {
 
 	public void Bumper (){
 		Debug.Log ("BUMP!");
-
 		GameObject go = Instantiate (bumper, gameObject.transform.position, Quaternion.identity) as GameObject;
 		go.transform.parent = gameObject.transform;
 	}
@@ -54,5 +55,10 @@ public class BonusManager : MonoBehaviour {
 		Debug.Log ("IEM!");
 		gameObject.AddComponent<IEM> ();
 		gameObject.GetComponent<IEM> ().initIEM(2,gameObject);
+	}
+
+	public void grappin(){
+		Debug.Log("GRAPPIN");
+		gameObject.AddComponent<Grappin> ();
 	}
 }

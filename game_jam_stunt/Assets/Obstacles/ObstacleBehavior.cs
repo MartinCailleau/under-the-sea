@@ -12,4 +12,14 @@ public class ObstacleBehavior : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void OnCollisionEnter2D(Collision2D c){
+		if(c.gameObject.tag=="Player"){
+			this.detroyObstacle();
+		}
+	}
+
+	public void detroyObstacle(){
+		Destroy (gameObject);
+	}
 }

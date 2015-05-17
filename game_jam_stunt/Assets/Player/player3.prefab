@@ -450,6 +450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bonusType: 
   bonusOn: 0
+  bumper: {fileID: 117786, guid: 433164ec4ea9e423eb92dc675ca05c63, type: 2}
 --- !u!114 &11439642
 MonoBehaviour:
   m_ObjectHideFlags: 1
