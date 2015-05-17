@@ -47,7 +47,6 @@ MonoBehaviour:
   cachalotHorizontal: {fileID: 197008, guid: a97b4bca0b6d4b44ebd248abc86e4c72, type: 2}
   barreBiaisGauche: {fileID: 111180, guid: d0034636fc5f41145bb16274c6c3744d, type: 2}
   epaveBasGauche: {fileID: 164472, guid: d273ef2122691944d99b412e0f60937f, type: 2}
-  bonus: {fileID: 138828, guid: bd0260901fa455a4a8703eeacc21dc95, type: 2}
   barreBiaisDroit: {fileID: 124552, guid: bfd37d904fadb234bb48f8b33e6e8807, type: 2}
   cachalotBiaisGauche: {fileID: 111694, guid: cc2a36f2e75d7104086d5b56b2dba365, type: 2}
   epaveHautDroit: {fileID: 187142, guid: 9a9c0b510f05d1d4a990e43b67f90f19, type: 2}
@@ -56,6 +55,10 @@ MonoBehaviour:
   barre: {fileID: 139012, guid: 5189b7bec7454ea4a8df6668128da825, type: 2}
   barreHorizontale: {fileID: 116678, guid: 0bbfeff44748ca849a2bddcfe9cd24be, type: 2}
   epaveHautGauche: {fileID: 130058, guid: 5052ef68a6aa55d43bc6eac9f748045e, type: 2}
+  bonusList:
+  - {fileID: 138828, guid: bd0260901fa455a4a8703eeacc21dc95, type: 2}
+  - {fileID: 193162, guid: 82faeeb6eebb6467980775fb253dc7b7, type: 2}
+  - {fileID: 152184, guid: 515769f8554aa49b2aadd283a16dee08, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

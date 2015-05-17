@@ -15,7 +15,11 @@ public class ObstacleBehavior : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D c){
 		if(c.gameObject.tag=="Player"){
-			GameObject.Destroy(this.gameObject);
+			this.detroyObstacle();
 		}
+	}
+
+	public void detroyObstacle(){
+		Destroy (gameObject);
 	}
 }

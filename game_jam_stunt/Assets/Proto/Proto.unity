@@ -294,12 +294,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
---- !u!1 &462496424
+  m_RootOrder: 2
+--- !u!1 &462496424 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 124674, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
   m_PrefabInternal: {fileID: 716203179}
---- !u!1 &464350500
+--- !u!1 &464350500 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 104430, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
   m_PrefabInternal: {fileID: 716203179}
@@ -440,7 +440,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452744, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.44999981
+      value: -8.44999981
       objectReference: {fileID: 0}
     - target: {fileID: 452744, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
       propertyPath: m_LocalPosition.z
@@ -574,7 +574,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
---- !u!1 &1320668758
+--- !u!1 &1320668758 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 101918, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
   m_PrefabInternal: {fileID: 716203179}
@@ -691,8 +691,8 @@ Transform:
   - {fileID: 532736738}
   - {fileID: 1837203794}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
---- !u!1 &1828736955
+  m_RootOrder: 4
+--- !u!1 &1828736955 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 167642, guid: cd1fdba74e075b4439e81a64f9126a3b, type: 2}
   m_PrefabInternal: {fileID: 1528287448}
@@ -798,33 +798,13 @@ Prefab:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 11451054, guid: 636abba74036a0d4c81fced0f660ca86, type: 2}
-      propertyPath: bonusList.Array.data[2]
-      value: 
-      objectReference: {fileID: 104244, guid: ebfee70577589488698e88f459e08fc3, type: 2}
-    - target: {fileID: 11451054, guid: 636abba74036a0d4c81fced0f660ca86, type: 2}
       propertyPath: bonusList.Array.data[3]
       value: 
-      objectReference: {fileID: 152184, guid: 515769f8554aa49b2aadd283a16dee08, type: 2}
-    - target: {fileID: 11451054, guid: 636abba74036a0d4c81fced0f660ca86, type: 2}
-      propertyPath: bonusList.Array.data[0]
-      value: 
-      objectReference: {fileID: 138828, guid: bd0260901fa455a4a8703eeacc21dc95, type: 2}
-    - target: {fileID: 11451054, guid: 636abba74036a0d4c81fced0f660ca86, type: 2}
-      propertyPath: bonusList.Array.data[1]
-      value: 
-      objectReference: {fileID: 193162, guid: 82faeeb6eebb6467980775fb253dc7b7, type: 2}
-    - target: {fileID: 11451054, guid: 636abba74036a0d4c81fced0f660ca86, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 117268, guid: 636abba74036a0d4c81fced0f660ca86, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 104244, guid: ebfee70577589488698e88f459e08fc3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 636abba74036a0d4c81fced0f660ca86, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2132379636
+--- !u!1 &2132379636 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 148716, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
   m_PrefabInternal: {fileID: 716203179}
