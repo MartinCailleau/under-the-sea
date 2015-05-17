@@ -170,7 +170,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 457674, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11487490, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
       propertyPath: spawn1
@@ -422,7 +422,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452744, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6125612, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
       propertyPath: m_Offset.x
