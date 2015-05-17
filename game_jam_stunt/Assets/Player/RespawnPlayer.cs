@@ -13,8 +13,22 @@ public class RespawnPlayer : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D c){
 
 		if(c.gameObject.tag=="Obstacle"){
-			this.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-			this.gameObject.transform.position = respawnPoint.transform.position;
+
+			StartCoroutine(waitAndRespawn(1));
+		
+
 		}
+	}
+
+	IEnumerator waitAndRespawn(float waitTime) {
+		this.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+		this.gameObject.transform.position = respawnPoint.transform.position;
+		this.gameObject.GetComponent<Animator> ().SetBool ("blink", true);
+		this.gameObject.GetComponent<Controle> ().enabled=false;
+
+		yield return new WaitForSeconds(waitTime);
+		this.gameObject.GetComponent<Animator> ().SetBool ("blink", false);
+		this.gameObject.GetComponent<Controle>().enabled=true;
+
 	}
 }
