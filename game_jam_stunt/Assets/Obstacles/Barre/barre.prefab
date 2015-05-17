@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .709999979, y: 0, z: 0}
+  m_LocalPosition: {x: 3.59372592, y: -8.4534483, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59,10 +59,15 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: -.100000001, y: .400000006}
-      - {x: -.100000001, y: -.400000006}
-      - {x: .100000001, y: -.400000006}
-      - {x: .100000001, y: .400000006}
+    - - {x: -.0498110317, y: .389580935}
+      - {x: -.138374403, y: .0703226104}
+      - {x: -.141984493, y: -.0968847275}
+      - {x: -.0618952774, y: -.419253916}
+      - {x: .0869761482, y: -.431257069}
+      - {x: .0968252197, y: -.299219131}
+      - {x: .0294114836, y: -.231561854}
+      - {x: .0399369262, y: .111242488}
+      - {x: .0931522399, y: .388587296}
 --- !u!114 &11429776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98,7 +103,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 85e571e6db9c7c54390be8c8ccbff9b0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e355dc101affe9d41ba56c10c3524a10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

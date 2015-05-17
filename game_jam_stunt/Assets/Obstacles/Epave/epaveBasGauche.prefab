@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 449704}
   - 212: {fileID: 21237612}
   - 50: {fileID: 5073074}
-  - 60: {fileID: 6069290}
+  - 60: {fileID: 6049046}
   m_Layer: 8
   m_Name: epaveBasGauche
   m_TagString: Obstacle
@@ -45,7 +45,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!60 &6069290
+--- !u!60 &6049046
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -58,12 +58,12 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: -.150000006, y: .150000006}
-      - {x: -.150000006, y: -.150000006}
-      - {x: .150000006, y: -.150000006}
-      - {x: .150000006, y: -.100000001}
-      - {x: .0500000007, y: .100000001}
-      - {x: -.0799999982, y: .150000006}
+    - - {x: -.142564639, y: .105388299}
+      - {x: -.117780574, y: -.0880394876}
+      - {x: .0756474361, y: -.169827357}
+      - {x: .182219416, y: -.122305773}
+      - {x: .0921331272, y: .0553884804}
+      - {x: -.0800000057, y: .172305927}
 --- !u!212 &21237612
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5a132516d3d5d03459e9304497ce9996, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 542ba1d4897f8e7499336679abba0fa0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
