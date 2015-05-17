@@ -3,16 +3,22 @@ using System.Collections;
 
 public class Grappin : MonoBehaviour {
 
-	float maxDistance = 100;
+	float maxDistance = 1000;
+	float speed = 6;
 
+	int idPlayer;
 	Vector2 target, start;
 	float distance;
 	float startTime;
 	bool grap = false;
 
+	void initGrappin(GameObject player){
+		//getComponent comme dans end.cs
+		idPlayer = player.GetComponent<Controle>().playerId;
+	}
+
 	// Use this for initialization
 	void Start () {
-		Debug.Log("GRAPPIN");
 		startTime = Time.time;
 		start = this.gameObject.transform.position;
 
@@ -21,17 +27,25 @@ public class Grappin : MonoBehaviour {
 			target = hit.point;
 			distance = hit.distance;
 			grap = true;
+			Debug.Log("Target : " + hit.transform.name);
 		}
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log ("Grap " + grap);
 		if(grap){
-			float increment = (Time.time - startTime)/distance;
+			Debug.Log("Grap : " + grap);
+			float increment = ((Time.time - startTime)/distance)*speed;
 			this.gameObject.transform.position = Vector2.Lerp(start, target, increment);
-			if(Mathf.Abs(this.gameObject.transform.position.y-target.y)<=1) grap = false;
+			if(Mathf.Abs(this.gameObject.transform.position.y-target.y)<=0.1) grap = false;
 		}
+		if (Input.GetButtonDown("A"+(idPlayer+1))) {
+			grap = false;
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D c){
+		grap = false;
 	}
 }
