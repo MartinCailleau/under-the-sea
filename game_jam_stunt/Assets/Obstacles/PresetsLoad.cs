@@ -12,18 +12,18 @@ public class Obstacle {
 }
 
 public class PresetsLoad : MonoBehaviour {
-
+	
 	//Prefabs Obstacles
-	public GameObject debrisGros, debrisGrosBiais, debrisPetit, grenaille, debrisPetitBiais, baudroie, 
-		cachalotHorizontal, barreBiaisGauche, epaveBasGauche, 
+	public GameObject debrisGros, debrisPetit, grenaille, debrisGrosBiais, baudroie, 
+	cachalotHorizontal, barreBiaisGauche, epaveBasGauche, 
 	barreBiaisDroit, cachalotBiaisGauche, epaveHautDroit, epaveBasDroit, cachalotBiaisDroit,
 	barre, barreHorizontale, epaveHautGauche;
-
+	
 	GameObject bonus;
-
+	
 	public GameObject[] bonusList;
-
-
+	
+	
 	//Bandes
 	ArrayList bande1= new ArrayList();
 	ArrayList bande2= new ArrayList();
@@ -41,125 +41,264 @@ public class PresetsLoad : MonoBehaviour {
 	ArrayList bande14= new ArrayList();
 	ArrayList bande15= new ArrayList();
 	ArrayList bande16= new ArrayList();
-
+	
 	ArrayList bandes = new ArrayList();
-
+	
 	GameObject detector;
-
+	
 	void Start(){
 		bonus = new GameObject ();
-
-		bande1.Add(new Obstacle(debrisGros, new Vector2(9, 9)));
-		bande1.Add(new Obstacle(debrisPetit, new Vector2(20, 8)));
+		
+		bande1.Add(new Obstacle(barreBiaisDroit, new Vector2(46, 4)));
+		//bande1.Add(new Obstacle(barreBiaisDroit, new Vector2(42, 8)));
+		//bande1.Add(new Obstacle(cachalotHorizontal, new Vector2(33, 2)));
+		bande1.Add(new Obstacle(barreBiaisGauche, new Vector2(30, 8)));
+		bande1.Add(new Obstacle(cachalotHorizontal, new Vector2(24, 3)));
+		//bande1.Add(new Obstacle(grenaille, new Vector2(21, 7)));
+		//bande1.Add(new Obstacle(barreBiaisGauche, new Vector2(16, 8)));
+		bande1.Add(new Obstacle(epaveHautGauche, new Vector2(13, 4)));
+		/*bande1.Add(new Obstacle(epaveHautGauche, new Vector2(7, 6)));
+		bande1.Add(new Obstacle(epaveBasDroit, new Vector2(5, 7)));*/
+		bande1.Add(new Obstacle(baudroie, new Vector2(3, 8)));
+		//bande1.Add(new Obstacle(grenaille, new Vector2(1, 1)));
+		
+		bande2.Add(new Obstacle(epaveBasDroit, new Vector2(3, 2)));
+		//bande2.Add(new Obstacle(epaveHautDroit, new Vector2(3, 8)));
+		bande2.Add(new Obstacle(bonus, new Vector2(7, 5)));
+		bande2.Add(new Obstacle(epaveHautGauche, new Vector2(11, 7)));
+		//bande2.Add(new Obstacle(grenaille, new Vector2(11, 2)));
+		bande2.Add(new Obstacle(barreHorizontale, new Vector2(23, 8)));
+		//bande2.Add(new Obstacle(debrisGrosBiais, new Vector2(22, 3)));
+		//bande2.Add(new Obstacle(grenaille, new Vector2(29, 8)));
+		//bande2.Add(new Obstacle(debrisGros, new Vector2(37, 4)));
+		bande2.Add(new Obstacle(barreBiaisDroit, new Vector2(37, 4)));
+		//bande2.Add(new Obstacle(debrisPetit, new Vector2(40, 3)));
+		bande2.Add(new Obstacle(barreBiaisDroit, new Vector2(22, 3)));
+		bande2.Add(new Obstacle(epaveBasGauche, new Vector2(46, 8)));
+		bande2.Add(new Obstacle(barre, new Vector2(49, 3)));
+		
+		bande3.Add(new Obstacle(epaveHautGauche, new Vector2(2, 2)));
+		bande3.Add(new Obstacle(epaveBasDroit, new Vector2(7, 9)));
+		//bande3.Add(new Obstacle(debrisGros, new Vector2(13, 2)));
+		bande3.Add(new Obstacle(barreHorizontale, new Vector2(20, 10)));
+		//bande3.Add(new Obstacle(barre, new Vector2(26, 3)));
+		bande3.Add(new Obstacle(bonus, new Vector2(28, 1)));
+		//bande3.Add(new Obstacle(debrisPetit, new Vector2(32, 2)));
+		bande3.Add(new Obstacle(debrisGros, new Vector2(38, 8)));
+		bande3.Add(new Obstacle(cachalotHorizontal, new Vector2(46, 2)));
+		//bande3.Add(new Obstacle(debrisPetit, new Vector2(48, 8)));
+		bande3.Add(new Obstacle(debrisGrosBiais, new Vector2(21, 5)));
+		
+		bande4.Add(new Obstacle(debrisGros, new Vector2(3, 8)));
+		bande4.Add(new Obstacle(epaveHautDroit, new Vector2(5, 2)));
+		bande4.Add(new Obstacle(epaveHautGauche, new Vector2(16, 2)));
+		bande4.Add(new Obstacle(epaveHautGauche, new Vector2(18, 8)));
+		//bande4.Add(new Obstacle(grenaille, new Vector2(23, 1)));
+		bande4.Add(new Obstacle(debrisPetit, new Vector2(28, 2)));
+		//bande4.Add(new Obstacle(grenaille, new Vector2(29, 6)));
+		bande4.Add(new Obstacle(epaveBasDroit, new Vector2(30, 9)));
+		//bande4.Add(new Obstacle(barre, new Vector2(37, 8)));
+		bande4.Add(new Obstacle(barreBiaisDroit, new Vector2(40, 2)));
+		//bande4.Add(new Obstacle(grenaille, new Vector2(45, 1)));
+		bande4.Add(new Obstacle(baudroie, new Vector2(47, 8)));
+		
+		bande5.Add(new Obstacle(epaveBasGauche, new Vector2(3, 6)));
+		//bande5.Add(new Obstacle(grenaille, new Vector2(11, 10)));
+		//bande5.Add(new Obstacle(grenaille, new Vector2(15, 10)));
+		//bande5.Add(new Obstacle(grenaille, new Vector2(19, 10)));
+		/*bande5.Add(new Obstacle(barreBiaisDroit, new Vector2(8, 3)));
+		bande5.Add(new Obstacle(barreBiaisGauche, new Vector2(12, 8)));
+		bande5.Add(new Obstacle(barreBiaisDroit, new Vector2(20, 7)));*/
+		//bande5.Add(new Obstacle(barreHorizontale, new Vector2(20, 2)));
+		/*bande5.Add(new Obstacle(barreBiaisGauche, new Vector2(30, 5)));
+		bande5.Add(new Obstacle(barreBiaisGauche, new Vector2(30, 8)));*/
+		bande5.Add(new Obstacle(debrisGrosBiais, new Vector2(12, 5)));
+		bande5.Add(new Obstacle(debrisGrosBiais, new Vector2(26, 7)));
+		bande5.Add(new Obstacle(epaveBasDroit, new Vector2(37, 2)));
+		bande5.Add(new Obstacle(cachalotHorizontal, new Vector2(40, 9)));
+		//bande5.Add(new Obstacle(cachalotBiaisDroit, new Vector2(45, 3)));
+		
+		bande6.Add(new Obstacle(epaveHautGauche, new Vector2(3, 2)));
+		//bande6.Add(new Obstacle(epaveHautDroit, new Vector2(9, 2)));
+		bande6.Add(new Obstacle(barreHorizontale, new Vector2(6, 7)));
+		bande6.Add(new Obstacle(barreBiaisDroit, new Vector2(15, 2)));
+		bande6.Add(new Obstacle(debrisPetit, new Vector2(20, 6)));
+		/*bande6.Add(new Obstacle(cachalotHorizontal, new Vector2(22, 7)));*/
+		bande6.Add(new Obstacle(bonus, new Vector2(21, 2)));
+		bande6.Add(new Obstacle(epaveHautGauche, new Vector2(27, 2)));
+		/*bande6.Add(new Obstacle(barreHorizontale, new Vector2(34, 4)));*/
+		bande6.Add(new Obstacle(barreBiaisDroit, new Vector2 (34, 4)));
+		//bande6.Add(new Obstacle(barreHorizontale, new Vector2(42, 4)));
+		bande6.Add(new Obstacle(epaveHautGauche, new Vector2(35, 8)));
+		//bande6.Add(new Obstacle(epaveHautDroit, new Vector2(41, 8)));
+		bande6.Add(new Obstacle(epaveBasDroit, new Vector2(47, 8)));
+		//bande6.Add(new Obstacle(grenaille, new Vector2(49, 1)));
+		
+		bande7.Add(new Obstacle(barre, new Vector2(1, 2)));
+		bande7.Add(new Obstacle(bonus, new Vector2(4, 3)));
+		//bande7.Add(new Obstacle(epaveHautGauche, new Vector2(10, 3)));
+		bande7.Add(new Obstacle(debrisGrosBiais, new Vector2(8, 8)));
+		bande7.Add(new Obstacle(epaveHautDroit, new Vector2(18, 7)));
+		bande7.Add(new Obstacle(barreHorizontale, new Vector2(22, 1)));
+		//bande7.Add(new Obstacle(grenaille, new Vector2(28, 8)));
+		//bande7.Add(new Obstacle(epaveHautGauche, new Vector2(30, 7)));
+		//bande7.Add(new Obstacle(grenaille, new Vector2(31, 2)));
+		bande7.Add(new Obstacle(debrisPetit, new Vector2(34, 8)));
+		bande7.Add(new Obstacle(barreBiaisGauche, new Vector2(42, 4)));
+		bande7.Add(new Obstacle(debrisPetit, new Vector2(48, 2)));
+		//bande7.Add(new Obstacle(grenaille, new Vector2(47, 8)));
+		
+		bande8.Add(new Obstacle(debrisPetit, new Vector2(2, 2)));
+		bande8.Add(new Obstacle(barreHorizontale, new Vector2(6, 8)));
+		//bande8.Add(new Obstacle(debrisPetit, new Vector2(12, 2)));
+		bande8.Add(new Obstacle(barre, new Vector2(19, 7)));
+		bande8.Add(new Obstacle(barre, new Vector2(17, 7)));
+		bande8.Add(new Obstacle(debrisPetit, new Vector2(24, 2)));
+		//bande8.Add(new Obstacle(grenaille, new Vector2(25, 5)));
+		bande8.Add(new Obstacle(debrisPetit, new Vector2(30, 8)));
+		//bande8.Add(new Obstacle(grenaille, new Vector2(33, 4)));
+		//bande8.Add(new Obstacle(grenaille, new Vector2(37, 6)));
+		bande8.Add(new Obstacle(barreHorizontale, new Vector2(40, 1)));
+		bande8.Add(new Obstacle(debrisGrosBiais, new Vector2(44, 7)));
+		
+		//bande9.Add(new Obstacle(barreBiaisDroit, new Vector2(4, 2)));
+		bande9.Add(new Obstacle(debrisPetit, new Vector2(2, 9)));
+		bande9.Add(new Obstacle(debrisGrosBiais, new Vector2(10, 5)));
+		//bande9.Add(new Obstacle(grenaille, new Vector2(11, 1)));
+		bande9.Add(new Obstacle(barreHorizontale, new Vector2(18, 10)));
+		bande9.Add(new Obstacle(baudroie, new Vector2(26, 4)));
+		bande9.Add(new Obstacle(barreBiaisDroit, new Vector2(34, 8)));
+		//bande9.Add(new Obstacle(cachalotHorizontal, new Vector2(32, 2)));
+		//bande9.Add(new Obstacle(barreHorizontale, new Vector2(42, 8)));
+		bande9.Add(new Obstacle(debrisPetit, new Vector2(44, 2)));
+		//bande9.Add(new Obstacle(barre, new Vector2(49, 3)));
+		
+		/* A REPENSER
+		bande9.Add(new Obstacle(barreHorizontale, new Vector2(6, 4)));
+		bande9.Add(new Obstacle(grenaille, new Vector2(5, 1)));
+		bande9.Add(new Obstacle(debrisGrosBiais, new Vector2(8, 8)));
+		bande9.Add(new Obstacle(debrisGrosBiais, new Vector2(16, 3)));
+		bande9.Add(new Obstacle(cachalotHorizontal, new Vector2(20, 8)));
+		bande9.Add(new Obstacle(barreHorizontale, new Vector2(26, 4)));
+		bande9.Add(new Obstacle(grenaille, new Vector2(23, 1)));
+		bande9.Add(new Obstacle(cachalotHorizontal, new Vector2(38, 2)));
+		bande9.Add(new Obstacle(barreHorizontale, new Vector2(32, 7)));
+		bande9.Add(new Obstacle(epaveBasDroit, new Vector2(37, 8)));
+		bande9.Add(new Obstacle(epaveBasGauche, new Vector2(47, 8)));
+		bande9.Add(new Obstacle(cachalotHorizontal, new Vector2(46, 3)));
+		*/
+		/*
+		bande1.Add(new Obstacle(debrisGros, new Vector2(9, 6)));
+		bande1.Add(new Obstacle(debrisPetit, new Vector2(20, 5)));
 		bande1.Add(new Obstacle(grenaille, new Vector2(25, 1)));
-		bande1.Add(new Obstacle(grenaille, new Vector2(27, 9)));
+		bande1.Add(new Obstacle(grenaille, new Vector2(27, 6)));
 		bande1.Add(new Obstacle(grenaille, new Vector2(31, 1)));
-		bande1.Add(new Obstacle(grenaille, new Vector2(35, 9)));
+		bande1.Add(new Obstacle(grenaille, new Vector2(35, 6)));
 		bande1.Add(new Obstacle(grenaille, new Vector2(41, 1)));
 
-		bande2.Add(new Obstacle(debrisPetitBiais, new Vector2(4, 6)));
-		bande2.Add(new Obstacle(baudroie, new Vector2(9, 6)));
-		bande2.Add(new Obstacle(cachalotHorizontal, new Vector2(32, 14)));
-		bande2.Add(new Obstacle(barreBiaisGauche, new Vector2(42, 5)));
+		bande2.Add(new Obstacle(debrisGrosBiais, new Vector2(4, 4)));
+		bande2.Add(new Obstacle(baudroie, new Vector2(9, 4)));
+		bande2.Add(new Obstacle(cachalotHorizontal, new Vector2(32, 9)));
+		bande2.Add(new Obstacle(barreBiaisGauche, new Vector2(42, 4)));
 
-		bande3.Add(new Obstacle(epaveBasGauche, new Vector2(3, 7)));
-		bande3.Add(new Obstacle(bonus, new Vector2(7, 12)));
+		bande3.Add(new Obstacle(epaveBasGauche, new Vector2(3, 5)));
+		bande3.Add(new Obstacle(bonus, new Vector2(7, 8)));
 		bande3.Add(new Obstacle(grenaille, new Vector2(15, 1)));
-		bande3.Add(new Obstacle(grenaille, new Vector2(17, 7)));
+		bande3.Add(new Obstacle(grenaille, new Vector2(17, 5)));
 		bande3.Add(new Obstacle(grenaille, new Vector2(23, 1)));
-		bande3.Add(new Obstacle(grenaille, new Vector2(25, 7)));
+		bande3.Add(new Obstacle(grenaille, new Vector2(25, 5)));
 		bande3.Add(new Obstacle(grenaille, new Vector2(31, 1)));
-		bande3.Add(new Obstacle(debrisPetit, new Vector2(38, 14)));
+		bande3.Add(new Obstacle(debrisPetit, new Vector2(38, 9)));
 		bande3.Add(new Obstacle(debrisPetit, new Vector2(44, 2)));
 
-		bande4.Add(new Obstacle(debrisPetit, new Vector2(2, 14)));
-		bande4.Add(new Obstacle(cachalotHorizontal, new Vector2(14, 10)));
-		bande4.Add(new Obstacle(bonus, new Vector2(28, 8)));
-		bande4.Add(new Obstacle(grenaille, new Vector2(25, 15)));
-		bande4.Add(new Obstacle(grenaille, new Vector2(26, 15)));
-		bande4.Add(new Obstacle(barreBiaisDroit, new Vector2(41, 5)));
+		bande4.Add(new Obstacle(debrisPetit, new Vector2(2, 9)));
+		bande4.Add(new Obstacle(cachalotHorizontal, new Vector2(14, 7)));
+		bande4.Add(new Obstacle(bonus, new Vector2(28, 5)));
+		bande4.Add(new Obstacle(grenaille, new Vector2(25, 10)));
+		bande4.Add(new Obstacle(grenaille, new Vector2(26, 10)));
+		bande4.Add(new Obstacle(barreBiaisDroit, new Vector2(41, 4)));
 
-		bande5.Add(new Obstacle(barreBiaisGauche, new Vector2(7, 11)));
-		bande5.Add(new Obstacle(barreBiaisGauche, new Vector2(14, 6)));
-		bande5.Add(new Obstacle(barreBiaisDroit, new Vector2(22, 4)));
-		bande5.Add(new Obstacle(debrisPetit, new Vector2(28, 14)));
-		bande5.Add(new Obstacle(debrisPetit, new Vector2(38, 6)));
-		bande5.Add(new Obstacle(grenaille, new Vector2(47, 9)));
+		bande5.Add(new Obstacle(barreBiaisGauche, new Vector2(7, 7)));
+		bande5.Add(new Obstacle(barreBiaisGauche, new Vector2(14, 4)));
+		bande5.Add(new Obstacle(barreBiaisDroit, new Vector2(22, 3)));
+		bande5.Add(new Obstacle(debrisPetit, new Vector2(28, 10)));
+		bande5.Add(new Obstacle(debrisPetit, new Vector2(38, 4)));
+		bande5.Add(new Obstacle(grenaille, new Vector2(47, 6)));
 
 		bande6.Add(new Obstacle(cachalotHorizontal, new Vector2(6, 2)));
-		bande6.Add(new Obstacle(cachalotHorizontal, new Vector2(6, 12)));
-		bande6.Add(new Obstacle(cachalotBiaisGauche, new Vector2(2, 7)));
-		bande6.Add(new Obstacle(epaveHautDroit, new Vector2(36, 8)));
-		bande6.Add(new Obstacle(debrisPetit, new Vector2(48, 14)));
+		bande6.Add(new Obstacle(cachalotHorizontal, new Vector2(6, 8)));
+		bande6.Add(new Obstacle(cachalotBiaisGauche, new Vector2(2, 5)));
+		bande6.Add(new Obstacle(epaveHautDroit, new Vector2(36, 5)));
+		bande6.Add(new Obstacle(debrisPetit, new Vector2(48, 9)));
 
-		bande7.Add(new Obstacle(barreBiaisGauche, new Vector2(10, 10)));
-		bande7.Add(new Obstacle(barreBiaisGauche, new Vector2(18, 8)));
-		bande7.Add(new Obstacle(cachalotHorizontal, new Vector2(34, 6)));
+		bande7.Add(new Obstacle(barreBiaisGauche, new Vector2(10, 7)));
+		bande7.Add(new Obstacle(barreBiaisGauche, new Vector2(18, 5)));
+		bande7.Add(new Obstacle(cachalotHorizontal, new Vector2(34, 4)));
 		bande7.Add(new Obstacle(bonus, new Vector2(45, 1)));
-		bande7.Add(new Obstacle(epaveBasDroit, new Vector2(48, 6)));
+		bande7.Add(new Obstacle(epaveBasDroit, new Vector2(48, 4)));
 
-		bande8.Add(new Obstacle(barreBiaisGauche, new Vector2(10, 6)));
-		bande8.Add(new Obstacle(bonus, new Vector2(15, 13)));
-		bande8.Add(new Obstacle(cachalotHorizontal, new Vector2(24, 8)));
-		bande8.Add(new Obstacle(epaveBasGauche, new Vector2(36, 8)));
+		bande8.Add(new Obstacle(barreBiaisGauche, new Vector2(10, 4)));
+		bande8.Add(new Obstacle(bonus, new Vector2(15, 8)));
+		bande8.Add(new Obstacle(cachalotHorizontal, new Vector2(24, 5)));
+		bande8.Add(new Obstacle(epaveBasGauche, new Vector2(36, 5)));
 
-		bande9.Add(new Obstacle(cachalotBiaisDroit, new Vector2(9, 7)));
-		bande9.Add(new Obstacle(grenaille, new Vector2(19, 5)));
-		bande9.Add(new Obstacle(grenaille, new Vector2(21, 13)));
-		bande9.Add(new Obstacle(grenaille, new Vector2(27, 5)));
-		bande9.Add(new Obstacle(grenaille, new Vector2(29, 13)));
-		bande9.Add(new Obstacle(grenaille, new Vector2(35, 5)));
-		bande9.Add(new Obstacle(baudroie, new Vector2(45, 8)));
+		bande9.Add(new Obstacle(cachalotBiaisDroit, new Vector2(9, 5)));
+		bande9.Add(new Obstacle(grenaille, new Vector2(19, 4)));
+		bande9.Add(new Obstacle(grenaille, new Vector2(21, 8)));
+		bande9.Add(new Obstacle(grenaille, new Vector2(27, 4)));
+		bande9.Add(new Obstacle(grenaille, new Vector2(29, 8)));
+		bande9.Add(new Obstacle(grenaille, new Vector2(35, 4)));
+		bande9.Add(new Obstacle(baudroie, new Vector2(45, 5)));
 
-		bande10.Add(new Obstacle(barreBiaisDroit, new Vector2(10, 10)));
-		bande10.Add(new Obstacle(barreBiaisGauche, new Vector2(24, 10)));
-		bande10.Add(new Obstacle(barreBiaisDroit, new Vector2(36, 4)));
-		bande10.Add(new Obstacle(barreBiaisDroit, new Vector2(40, 12)));
+		bande10.Add(new Obstacle(barreBiaisDroit, new Vector2(10, 7)));
+		bande10.Add(new Obstacle(barreBiaisGauche, new Vector2(24, 7)));
+		bande10.Add(new Obstacle(barreBiaisDroit, new Vector2(36, 3)));
+		bande10.Add(new Obstacle(barreBiaisDroit, new Vector2(40, 8)));
 
-		bande11.Add(new Obstacle(grenaille, new Vector2(9, 3)));
-		bande11.Add(new Obstacle(grenaille, new Vector2(11, 11)));
-		bande11.Add(new Obstacle(grenaille, new Vector2(17, 3)));
-		bande11.Add(new Obstacle(grenaille, new Vector2(19, 11)));
-		bande11.Add(new Obstacle(grenaille, new Vector2(25, 3)));
-		bande11.Add(new Obstacle(debrisPetit, new Vector2(34, 12)));
-		bande11.Add(new Obstacle(barre, new Vector2(43, 6)));
+		bande11.Add(new Obstacle(grenaille, new Vector2(9, 2)));
+		bande11.Add(new Obstacle(grenaille, new Vector2(11, 7)));
+		bande11.Add(new Obstacle(grenaille, new Vector2(17, 2)));
+		bande11.Add(new Obstacle(grenaille, new Vector2(19, 7)));
+		bande11.Add(new Obstacle(grenaille, new Vector2(25, 2)));
+		bande11.Add(new Obstacle(debrisPetit, new Vector2(34, 8)));
+		bande11.Add(new Obstacle(barre, new Vector2(43, 4)));
 
-		bande12.Add(new Obstacle(grenaille, new Vector2(5, 3)));
-		bande12.Add(new Obstacle(grenaille, new Vector2(13, 13)));
-		bande12.Add(new Obstacle(barre, new Vector2(17, 8)));
-		bande12.Add(new Obstacle(barre, new Vector2(23, 4)));
-		bande12.Add(new Obstacle(barreBiaisDroit, new Vector2(35, 12)));
-		bande12.Add(new Obstacle(barreBiaisGauche, new Vector2(44, 6)));
+		bande12.Add(new Obstacle(grenaille, new Vector2(5, 2)));
+		bande12.Add(new Obstacle(grenaille, new Vector2(13, 8)));
+		bande12.Add(new Obstacle(barre, new Vector2(17, 5)));
+		bande12.Add(new Obstacle(barre, new Vector2(23, 3)));
+		bande12.Add(new Obstacle(barreBiaisDroit, new Vector2(35, 8)));
+		bande12.Add(new Obstacle(barreBiaisGauche, new Vector2(44, 4)));
 
-		bande13.Add(new Obstacle(epaveHautDroit, new Vector2(6, 10)));
-		bande13.Add(new Obstacle(debrisPetitBiais, new Vector2(14, 4)));
-		bande13.Add(new Obstacle(bonus, new Vector2(14, 10)));
-		bande13.Add(new Obstacle(epaveHautGauche, new Vector2(22, 10)));
-		bande13.Add(new Obstacle(barreBiaisDroit, new Vector2(36, 6)));
-		bande13.Add(new Obstacle(barre, new Vector2(45, 6)));
+		bande13.Add(new Obstacle(epaveHautDroit, new Vector2(6, 7)));
+		bande13.Add(new Obstacle(debrisGrosBiais, new Vector2(14, 3)));
+		bande13.Add(new Obstacle(bonus, new Vector2(14, 7)));
+		bande13.Add(new Obstacle(epaveHautGauche, new Vector2(22, 7)));
+		bande13.Add(new Obstacle(barreBiaisDroit, new Vector2(36, 4)));
+		bande13.Add(new Obstacle(barre, new Vector2(45, 4)));
 
-		bande14.Add(new Obstacle(epaveHautGauche, new Vector2(4, 4)));
-		bande14.Add(new Obstacle(debrisPetitBiais, new Vector2(11, 8)));
-		bande14.Add(new Obstacle(epaveHautDroit, new Vector2(18, 4)));
-		bande14.Add(new Obstacle(bonus, new Vector2(18, 12)));
-		bande14.Add(new Obstacle(debrisGros, new Vector2(31, 5)));
-		bande14.Add(new Obstacle(debrisPetit, new Vector2(40, 14)));
+		bande14.Add(new Obstacle(epaveHautGauche, new Vector2(4, 3)));
+		bande14.Add(new Obstacle(debrisGrosBiais, new Vector2(11, 5)));
+		bande14.Add(new Obstacle(epaveHautDroit, new Vector2(18, 3)));
+		bande14.Add(new Obstacle(bonus, new Vector2(18, 8)));
+		bande14.Add(new Obstacle(debrisGros, new Vector2(31, 4)));
+		bande14.Add(new Obstacle(debrisPetit, new Vector2(40, 9)));
 
-		bande15.Add(new Obstacle(epaveBasDroit, new Vector2(8, 4)));
-		bande15.Add(new Obstacle(epaveBasDroit, new Vector2(8, 14)));
-		bande15.Add(new Obstacle(bonus, new Vector2(10, 8)));
-		bande15.Add(new Obstacle(barreBiaisGauche, new Vector2(18, 8)));
-		bande15.Add(new Obstacle(grenaille, new Vector2(25, 3)));
-		bande15.Add(new Obstacle(barreBiaisDroit, new Vector2(30, 8)));
-		bande15.Add(new Obstacle(grenaille, new Vector2(35, 13)));
-		bande15.Add(new Obstacle(barreBiaisGauche, new Vector2(42, 8)));
+		bande15.Add(new Obstacle(epaveBasDroit, new Vector2(8, 3)));
+		bande15.Add(new Obstacle(epaveBasDroit, new Vector2(8, 9)));
+		bande15.Add(new Obstacle(bonus, new Vector2(10, 5)));
+		bande15.Add(new Obstacle(barreBiaisGauche, new Vector2(18, 5)));
+		bande15.Add(new Obstacle(grenaille, new Vector2(25, 2)));
+		bande15.Add(new Obstacle(barreBiaisDroit, new Vector2(30, 5)));
+		bande15.Add(new Obstacle(grenaille, new Vector2(35, 8)));
+		bande15.Add(new Obstacle(barreBiaisGauche, new Vector2(42, 5)));
 
-		bande16.Add(new Obstacle(barre, new Vector2(1, 4)));
-		bande16.Add(new Obstacle(debrisGros, new Vector2(13, 13)));
-		bande16.Add(new Obstacle(cachalotHorizontal, new Vector2(26, 8)));
-		bande16.Add(new Obstacle(barreBiaisDroit, new Vector2(39, 6)));
-		bande16.Add(new Obstacle(barre, new Vector2(49, 8)));
-
+		bande16.Add(new Obstacle(barre, new Vector2(1, 3)));
+		bande16.Add(new Obstacle(debrisGros, new Vector2(13, 8)));
+		bande16.Add(new Obstacle(cachalotHorizontal, new Vector2(26, 5)));
+		bande16.Add(new Obstacle(barreBiaisDroit, new Vector2(39, 4)));
+		bande16.Add(new Obstacle(barre, new Vector2(49, 5)));
+		*/
 		//contient toutes le bandes pour la selection
 		bandes.Add(bande1);
 		bandes.Add(bande2);
@@ -170,63 +309,66 @@ public class PresetsLoad : MonoBehaviour {
 		bandes.Add(bande7);
 		bandes.Add(bande8);
 		bandes.Add(bande9);
-		bandes.Add(bande10);
+		/*bandes.Add(bande10);
 		bandes.Add(bande11);
 		bandes.Add(bande12);
 		bandes.Add(bande13);
 		bandes.Add(bande14);
 		bandes.Add(bande15);
-		bandes.Add(bande16);
-
+		bandes.Add(bande16);*/
+		
 		selection();
-
+		
 	}
-
+	
 	void selection(){
-		int rand = Random.Range (0,3);
+		int rand = Random.Range (0,9);
 		instanciateBandeA((ArrayList)bandes[rand]);
-
-		rand = Random.Range(0,3);
+		
+		Debug.Log ("tuile A : " + rand);
+		
+		rand = Random.Range(0,9);
 		instanciateBandeB((ArrayList)bandes[rand]);
-
+		
+		Debug.Log ("Tuilde B : " + rand);
+		
 		//Detecteur
 		detector = new GameObject();
-		detector.transform.position = new Vector2(0, 15);
+		detector.transform.position = new Vector2(0, 10);
 		Rigidbody2D rg = detector.AddComponent<Rigidbody2D>();
 		rg.mass = 1000;
 		rg.drag = 5;
 	}
-
+	
 	void instanciateBandeA(ArrayList bande){
 		foreach(Obstacle obs in bande){
-
+			
 			Vector2 posCorrected = new Vector2(obs.pos.x/2.5f, (16-obs.pos.y)+10);
 			if(obs.prefab == bonus){
-				Random.seed = (int)System.DateTime.Now.Ticks;
 				int nbRand = Random.Range(0,bonusList.Length);
-				Debug.Log("SEED : "+(int)System.DateTime.Now.Ticks);
+				Debug.Log(nbRand);
 				obs.prefab = bonusList[nbRand];
 			}
 			GameObject go = GameObject.Instantiate(obs.prefab, (Vector3)posCorrected, obs.prefab.transform.rotation) as GameObject;
 			go.name = obs.prefab.name;
-
+			
 		}
 	}
-
+	
 	void instanciateBandeB(ArrayList bande){
 		foreach(Obstacle obs in bande){
 			Vector2 posCorrected = new Vector2((obs.pos.x-50)/2.5f, (16-obs.pos.y)+10); //pour y on inverse l'axe et on recule un peu pour leurs donner un retrait
 			if(obs.prefab == bonus){
-				Random.seed = (int)System.DateTime.Now.Ticks;
 				int nbRand = Random.Range(0,bonusList.Length);
-				Debug.Log("SEED : "+(int)System.DateTime.Now.Ticks);
+				Debug.Log(nbRand);
 				obs.prefab = bonusList[nbRand];
 			}
 			GameObject go = GameObject.Instantiate(obs.prefab, (Vector3)posCorrected, obs.prefab.transform.rotation) as GameObject;
 			go.name = obs.prefab.name;
+			
 		}
 	}
-
+	
 	void Update(){
 		if(detector.transform.position.y <=0){
 			GameObject.Destroy(detector);

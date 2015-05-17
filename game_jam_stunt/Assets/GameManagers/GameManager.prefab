@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05acecf43561848d88c4e90fb0b5c0d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endScreenCanvas: {fileID: 0}
 --- !u!114 &11487490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51,7 +52,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2a646b9e66945dd9b549330deeed1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabPlayer: {fileID: 159872, guid: 731ad8cb9c00641b990c403cd2bfd927, type: 2}
+  prefabPlayer1: {fileID: 159872, guid: 731ad8cb9c00641b990c403cd2bfd927, type: 2}
+  prefabPlayer2: {fileID: 152446, guid: a59eee2da3bb84259b5dd6b603d5a6b3, type: 2}
+  prefabPlayer3: {fileID: 184824, guid: 55a73aed7b0484ba7ae3663923f9bfd9, type: 2}
+  prefabPlayer4: {fileID: 146158, guid: 0806fd1a213d94eeca2d82c172ebbaa5, type: 2}
   spawn1: {fileID: 0}
   spawn2: {fileID: 0}
   spawn3: {fileID: 0}
