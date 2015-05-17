@@ -15,7 +15,7 @@ public class BonusCollider : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collider){
 		if (collider.gameObject.tag == "Player") {
-			collider.gameObject.GetComponent<BonusManager>().setBonusType(gameObject.name);
+			collider.gameObject.GetComponent<BonusManager>().setBonusType(gameObject);
 			Destroy(gameObject);
 		}
 	}

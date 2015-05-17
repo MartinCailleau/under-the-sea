@@ -16,9 +16,10 @@ public class BonusManager : MonoBehaviour {
 		
 	}
 
-	public void setBonusType(string bonusType){
-		Debug.Log ("Youpi, I've got a AMAZING POWER UP!"+bonusType);
-		this.bonusType = bonusType;
+	public void setBonusType(GameObject bonus){
+		Debug.Log ("Youpi, I've got a AMAZING POWER UP!"+bonus.name);
+		transform.FindChild ("Bonus").GetComponent<SpriteRenderer>().sprite = bonus.GetComponent<SpriteRenderer>().sprite;
+		this.bonusType = bonus.name;
 		bonusOn = true;
 	}
 
@@ -36,6 +37,7 @@ public class BonusManager : MonoBehaviour {
 			}
 			bonusType = "";
 			bonusOn = false;
+			transform.FindChild ("Bonus").GetComponent<SpriteRenderer>().sprite = null;
 		}
 	}
 
