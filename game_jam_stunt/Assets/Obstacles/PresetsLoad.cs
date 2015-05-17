@@ -14,7 +14,7 @@ public class Obstacle {
 public class PresetsLoad : MonoBehaviour {
 
 	//Prefabs Obstacles
-	public GameObject debrisGros, debrisPetit, grenaille, debrisPetitBiais, baudroie, 
+	public GameObject debrisGros, debrisGrosBiais, debrisPetit, grenaille, debrisPetitBiais, baudroie, 
 		cachalotHorizontal, barreBiaisGauche, epaveBasGauche, 
 	barreBiaisDroit, cachalotBiaisGauche, epaveHautDroit, epaveBasDroit, cachalotBiaisDroit,
 	barre, barreHorizontale, epaveHautGauche;

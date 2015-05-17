@@ -14,7 +14,7 @@ GameObject:
   - 60: {fileID: 6082174}
   - 108: {fileID: 10848564}
   - 114: {fileID: 11428638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: IEM
   m_TagString: Bonus
   m_Icon: {fileID: 0}

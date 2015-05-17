@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11405842}
   - 50: {fileID: 5029518}
   - 60: {fileID: 6022776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: grenaille
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

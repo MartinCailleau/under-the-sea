@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11444708}
   - 50: {fileID: 5012700}
   - 60: {fileID: 6015180}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: baudroie
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

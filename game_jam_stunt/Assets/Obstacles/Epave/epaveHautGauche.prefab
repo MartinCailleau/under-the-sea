@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21278542}
   - 50: {fileID: 5007812}
   - 60: {fileID: 6029458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: epaveHautGauche
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

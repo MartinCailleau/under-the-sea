@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21298406}
   - 50: {fileID: 5037096}
   - 60: {fileID: 6050962}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: epaveBasDroit
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

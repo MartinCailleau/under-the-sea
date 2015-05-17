@@ -14,7 +14,7 @@ GameObject:
   - 60: {fileID: 6070076}
   - 108: {fileID: 10868404}
   - 114: {fileID: 11434364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grappin
   m_TagString: Bonus
   m_Icon: {fileID: 0}

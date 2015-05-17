@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11419392}
   - 50: {fileID: 5008356}
   - 60: {fileID: 6059100}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: barreBiaisDroit
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

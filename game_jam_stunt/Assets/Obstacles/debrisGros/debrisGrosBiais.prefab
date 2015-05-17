@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11403932}
   - 50: {fileID: 5017982}
   - 60: {fileID: 6060878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: debrisGrosBiais
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

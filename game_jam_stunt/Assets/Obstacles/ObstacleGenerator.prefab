@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debrisGros: {fileID: 118164, guid: e7d5b02f24f28e9458717b156d0442d9, type: 2}
+  debrisGrosBiais: {fileID: 145168, guid: a76c7105b41e18746b591de848b28f5d, type: 2}
   debrisPetit: {fileID: 158784, guid: 1ad22dada70e7974a9d50ebd8fb5e4e9, type: 2}
   grenaille: {fileID: 136828, guid: 20e7c72d84d475b49b81ee3c17610753, type: 2}
   debrisPetitBiais: {fileID: 110814, guid: 0159126ed01bcd1439724b862a3fb828, type: 2}

@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21231878}
   - 50: {fileID: 5011448}
   - 60: {fileID: 6065600}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cachalotBiaisGauche
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
