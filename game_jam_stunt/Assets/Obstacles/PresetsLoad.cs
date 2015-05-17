@@ -202,8 +202,9 @@ public class PresetsLoad : MonoBehaviour {
 
 			Vector2 posCorrected = new Vector2(obs.pos.x/2.1f, (16-obs.pos.y)+10);
 			if(obs.prefab == bonus){
+				Random.seed = (int)System.DateTime.Now.Ticks;
 				int nbRand = Random.Range(0,bonusList.Length);
-				Debug.Log(nbRand);
+				Debug.Log("SEED : "+(int)System.DateTime.Now.Ticks);
 				obs.prefab = bonusList[nbRand];
 			}
 			GameObject go = GameObject.Instantiate(obs.prefab, (Vector3)posCorrected, obs.prefab.transform.rotation) as GameObject;
@@ -216,13 +217,13 @@ public class PresetsLoad : MonoBehaviour {
 		foreach(Obstacle obs in bande){
 			Vector2 posCorrected = new Vector2((obs.pos.x-50)/2.5f, (16-obs.pos.y)+10); //pour y on inverse l'axe et on recule un peu pour leurs donner un retrait
 			if(obs.prefab == bonus){
+				Random.seed = (int)System.DateTime.Now.Ticks;
 				int nbRand = Random.Range(0,bonusList.Length);
-				Debug.Log(nbRand);
+				Debug.Log("SEED : "+(int)System.DateTime.Now.Ticks);
 				obs.prefab = bonusList[nbRand];
 			}
 			GameObject go = GameObject.Instantiate(obs.prefab, (Vector3)posCorrected, obs.prefab.transform.rotation) as GameObject;
 			go.name = obs.prefab.name;
-
 		}
 	}
 

@@ -4,6 +4,7 @@ using System.Collections;
 public class BonusManager : MonoBehaviour {
 	public string bonusType;
 	public bool bonusOn;
+	public GameObject bumper;
 	// Use this for initialization
 	void Start () {
 		bonusOn = false;
@@ -28,6 +29,8 @@ public class BonusManager : MonoBehaviour {
 			break;
 			case "IEM":iem();
 			break;
+			case "Bumper":Bumper();
+			break;
 			}
 			bonusType = "";
 			bonusOn = false;
@@ -38,6 +41,13 @@ public class BonusManager : MonoBehaviour {
 		Debug.Log ("FREEZE!");
 		gameObject.AddComponent<LightFreeze>();
 
+	}
+
+	public void Bumper (){
+		Debug.Log ("BUMP!");
+
+		GameObject go = Instantiate (bumper, gameObject.transform.position, Quaternion.identity) as GameObject;
+		go.transform.parent = gameObject.transform;
 	}
 
 	public void iem(){

@@ -85,7 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5999999, y: -7.01999998, z: 0}
+  m_LocalPosition: {x: -.0700000003, y: -9.31999969, z: 0}
   m_LocalScale: {x: .150000006, y: .150000006, z: .150000006}
   m_Children:
   - {fileID: 463102}
@@ -475,6 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bonusType: 
   bonusOn: 0
+  bumper: {fileID: 117786, guid: 433164ec4ea9e423eb92dc675ca05c63, type: 2}
 --- !u!212 &21262386
 SpriteRenderer:
   m_ObjectHideFlags: 1
