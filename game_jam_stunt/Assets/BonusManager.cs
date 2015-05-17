@@ -28,6 +28,8 @@ public class BonusManager : MonoBehaviour {
 			break;
 			case "IEM":iem();
 			break;
+			case "Grappin":grappin();
+			break;
 			}
 			bonusType = "";
 			bonusOn = false;
@@ -44,5 +46,10 @@ public class BonusManager : MonoBehaviour {
 		Debug.Log ("IEM!");
 		gameObject.AddComponent<IEM> ();
 		gameObject.GetComponent<IEM> ().initIEM(2,gameObject);
+	}
+
+	public void grappin(){
+		Debug.Log("GRAPPIN");
+		gameObject.AddComponent<Grappin> ();
 	}
 }

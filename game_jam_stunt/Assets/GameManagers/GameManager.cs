@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 
-		Debug.Log (gameStateManager.gameState);
+		//Debug.Log (gameStateManager.gameState);
 	}
 
 	public void activePlayers(bool active){
