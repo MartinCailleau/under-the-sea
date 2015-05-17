@@ -2,14 +2,16 @@
 using System.Collections;
 
 public class Bumper : MonoBehaviour {
-
+	public GameObject shockwave; 
 	// Use this for initialization
 	void Start () {
 		StartCoroutine (waitAndDetroy (0.5f));
 	}
 
 	IEnumerator waitAndDetroy(float waitTime) {
+		GameObject go = Instantiate(shockwave,gameObject.transform.position,gameObject.transform.rotation) as GameObject;
 		yield return new WaitForSeconds(waitTime);
+		Destroy (go);
 		Destroy (gameObject);
 	}
 

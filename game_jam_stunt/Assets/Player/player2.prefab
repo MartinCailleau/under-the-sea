@@ -294,6 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73902ef7ed7cbf04a9e70a5adcf4157b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boom: {fileID: 180708, guid: 803265542084941f8868d5f3312e1fea, type: 2}
 --- !u!114 &11478470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -321,7 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bonusType: 
   bonusOn: 0
-  bumper: {fileID: 117786, guid: 433164ec4ea9e423eb92dc675ca05c63, type: 2}
+  bumper: {fileID: 192234, guid: e07b40edca9594bb0a9fe5dc0128037b, type: 2}
 --- !u!212 &21212578
 SpriteRenderer:
   m_ObjectHideFlags: 1
