@@ -14,7 +14,7 @@ public class Obstacle {
 public class PresetsLoad : MonoBehaviour {
 
 	//Prefabs Obstacles
-	public GameObject debrisGros, debrisPetit, grenaille, debrisPetitBiais, baudroie, 
+	public GameObject debrisGros, debrisGrosBiais, debrisPetit, grenaille, debrisPetitBiais, baudroie, 
 		cachalotHorizontal, barreBiaisGauche, epaveBasGauche, 
 	barreBiaisDroit, cachalotBiaisGauche, epaveHautDroit, epaveBasDroit, cachalotBiaisDroit,
 	barre, barreHorizontale, epaveHautGauche;
@@ -200,7 +200,7 @@ public class PresetsLoad : MonoBehaviour {
 	void instanciateBandeA(ArrayList bande){
 		foreach(Obstacle obs in bande){
 
-			Vector2 posCorrected = new Vector2(obs.pos.x/2.1f, (16-obs.pos.y)+10);
+			Vector2 posCorrected = new Vector2(obs.pos.x/2.5f, (16-obs.pos.y)+10);
 			if(obs.prefab == bonus){
 				Random.seed = (int)System.DateTime.Now.Ticks;
 				int nbRand = Random.Range(0,bonusList.Length);

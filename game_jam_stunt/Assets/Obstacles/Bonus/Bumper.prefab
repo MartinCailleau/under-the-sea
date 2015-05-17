@@ -14,7 +14,7 @@ GameObject:
   - 60: {fileID: 6007876}
   - 108: {fileID: 10845724}
   - 114: {fileID: 11417170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bumper
   m_TagString: Bonus
   m_Icon: {fileID: 0}

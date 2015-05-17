@@ -14,7 +14,7 @@ GameObject:
   - 60: {fileID: 6074910}
   - 108: {fileID: 10804730}
   - 114: {fileID: 11467380}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LightFreeze
   m_TagString: Bonus
   m_Icon: {fileID: 0}

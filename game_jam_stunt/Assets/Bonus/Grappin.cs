@@ -4,7 +4,7 @@ using System.Collections;
 public class Grappin : MonoBehaviour {
 
 	float maxDistance = 1000;
-	float speed = 6;
+	float speed = 1;
 
 	int idPlayer;
 	Vector2 target, start;
@@ -12,17 +12,13 @@ public class Grappin : MonoBehaviour {
 	float startTime;
 	bool grap = false;
 
-	void initGrappin(GameObject player){
-		//getComponent comme dans end.cs
-		idPlayer = player.GetComponent<Controle>().playerId;
-	}
-
 	// Use this for initialization
 	void Start () {
 		startTime = Time.time;
 		start = this.gameObject.transform.position;
-
-		RaycastHit2D hit = Physics2D.Raycast(this.gameObject.transform.position, new Vector3(0, 1, 0), maxDistance);
+		//idPlayer = this.gameObject.GetComponent<Controle>().playerId;
+		Vector2 startCast = new Vector2(this.gameObject.transform.position.x, this.gameObject.transform.position.y+5);
+		RaycastHit2D hit = Physics2D.Raycast(startCast, new Vector3(0, 1, 0), maxDistance);
 		if(hit.collider != null){
 			target = hit.point;
 			distance = hit.distance;
@@ -40,7 +36,7 @@ public class Grappin : MonoBehaviour {
 			this.gameObject.transform.position = Vector2.Lerp(start, target, increment);
 			if(Mathf.Abs(this.gameObject.transform.position.y-target.y)<=0.1) grap = false;
 		}
-		if (Input.GetButtonDown("A"+(idPlayer+1))) {
+		if (Input.GetButtonDown("A"+1)) {
 			grap = false;
 		}
 	}
