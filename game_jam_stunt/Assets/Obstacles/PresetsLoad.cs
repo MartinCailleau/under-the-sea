@@ -200,7 +200,7 @@ public class PresetsLoad : MonoBehaviour {
 	void instanciateBandeA(ArrayList bande){
 		foreach(Obstacle obs in bande){
 
-			Vector2 posCorrected = new Vector2(obs.pos.x/2.1f, (16-obs.pos.y)+10);
+			Vector2 posCorrected = new Vector2(obs.pos.x/2.5f, (16-obs.pos.y)+10);
 			if(obs.prefab == bonus){
 				int nbRand = Random.Range(0,bonusList.Length);
 				Debug.Log(nbRand);
