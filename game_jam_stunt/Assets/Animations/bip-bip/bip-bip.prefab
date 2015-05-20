@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 408802}
   - 212: {fileID: 21223358}
-  - 111: {fileID: 11136400}
   - 95: {fileID: 9512996}
   m_Layer: 0
   m_Name: bip-bip
@@ -47,20 +46,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!111 &11136400
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118752}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e0b3f13fd1553c64bae8aa6ecec6f01f, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!212 &21223358
 SpriteRenderer:
   m_ObjectHideFlags: 1

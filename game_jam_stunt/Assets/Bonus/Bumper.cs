@@ -10,6 +10,7 @@ public class Bumper : MonoBehaviour {
 
 	IEnumerator waitAndDetroy(float waitTime) {
 		GameObject go = Instantiate(shockwave,gameObject.transform.position,gameObject.transform.rotation) as GameObject;
+		go.transform.parent = gameObject.transform;
 		yield return new WaitForSeconds(waitTime);
 		Destroy (go);
 		Destroy (gameObject);
@@ -22,7 +23,7 @@ public class Bumper : MonoBehaviour {
 
 			Debug.Log(direction);
 			float wearoff = 1 - (direction.magnitude / 10);
-			collider.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 5000 * wearoff);
+			collider.gameObject.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 8000 * wearoff);
 			Destroy(gameObject);
 		}else if(collider.gameObject.tag == "Obstacle"){
 			collider.gameObject.GetComponent<ObstacleBehavior>().detroyObstacle();
