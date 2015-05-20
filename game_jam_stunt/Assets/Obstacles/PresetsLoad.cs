@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System;
 
 public class Obstacle {
 	public Obstacle(GameObject prefab, Vector2 pos){
@@ -322,15 +322,18 @@ public class PresetsLoad : MonoBehaviour {
 	}
 	
 	void selection(){
-		int rand = Random.Range (0,9);
+
+		UnityEngine.Random.seed = (int)(DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond);
+		int rand = UnityEngine.Random.Range (0,9);
 		instanciateBandeA((ArrayList)bandes[rand]);
-		
+
 		Debug.Log ("tuile A : " + rand);
-		
-		rand = Random.Range(0,9);
+
+		UnityEngine.Random.seed = (int)(DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond);
+		rand = UnityEngine.Random.Range(0,9);
 		instanciateBandeB((ArrayList)bandes[rand]);
 		
-		Debug.Log ("Tuilde B : " + rand);
+		Debug.Log ("Tuile B : " + rand);
 		
 		//Detecteur
 		detector = new GameObject();
@@ -345,7 +348,9 @@ public class PresetsLoad : MonoBehaviour {
 			
 			Vector2 posCorrected = new Vector2(obs.pos.x/2.5f, (16-obs.pos.y)+10);
 			if(obs.prefab == bonus){
-				int nbRand = Random.Range(0,bonusList.Length);
+
+				UnityEngine.Random.seed = (int)(DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond);
+				int nbRand = UnityEngine.Random.Range(0,bonusList.Length);
 				Debug.Log(nbRand);
 				obs.prefab = bonusList[nbRand];
 			}
@@ -359,7 +364,8 @@ public class PresetsLoad : MonoBehaviour {
 		foreach(Obstacle obs in bande){
 			Vector2 posCorrected = new Vector2((obs.pos.x-50)/2.5f, (16-obs.pos.y)+10); //pour y on inverse l'axe et on recule un peu pour leurs donner un retrait
 			if(obs.prefab == bonus){
-				int nbRand = Random.Range(0,bonusList.Length);
+				UnityEngine.Random.seed = (int)(DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond);
+				int nbRand = UnityEngine.Random.Range(0,bonusList.Length);
 				Debug.Log(nbRand);
 				obs.prefab = bonusList[nbRand];
 			}
