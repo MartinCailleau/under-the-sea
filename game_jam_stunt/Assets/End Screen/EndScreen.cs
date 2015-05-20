@@ -5,10 +5,11 @@ using System.Collections;
 public class EndScreen : MonoBehaviour {
 
 	public string winner;
+	public Text text;
 
 	// Use this for initialization
 	public void activeScreen(){
-
+		text.GetComponent<Text>().text = "Player " + winner + " win !";
 	}
 	
 	// Update is called once per frame
