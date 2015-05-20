@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class ObstacleBehavior : MonoBehaviour {
-
+	public GameObject boom;
 	// Use this for initialization
 	void Start () {
 	
@@ -20,6 +20,7 @@ public class ObstacleBehavior : MonoBehaviour {
 	}
 
 	public void detroyObstacle(){
+		GameObject go = Instantiate(boom,gameObject.transform.position,gameObject.transform.rotation) as GameObject;
 		Destroy (gameObject);
 	}
 }
