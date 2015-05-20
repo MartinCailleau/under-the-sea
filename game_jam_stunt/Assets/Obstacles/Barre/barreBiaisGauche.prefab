@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11414848}
   - 50: {fileID: 5029916}
   - 60: {fileID: 6085916}
+  - 114: {fileID: 11449350}
   m_Layer: 8
   m_Name: barreBiaisGauche
   m_TagString: Obstacle
@@ -79,6 +80,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb81324bdadaa964a8a856d3ec4a656f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boom: {fileID: 0}
+--- !u!114 &11449350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb81324bdadaa964a8a856d3ec4a656f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boom: {fileID: 180708, guid: 803265542084941f8868d5f3312e1fea, type: 2}
 --- !u!212 &21258326
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21294004}
   - 50: {fileID: 5007882}
   - 60: {fileID: 6048562}
+  - 114: {fileID: 11462922}
   m_Layer: 8
   m_Name: cachalot
   m_TagString: Obstacle
@@ -63,6 +64,18 @@ PolygonCollider2D:
       - {x: -.187384456, y: -.435323387}
       - {x: .220184922, y: -.450461864}
       - {x: .207569242, y: .422708005}
+--- !u!114 &11462922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb81324bdadaa964a8a856d3ec4a656f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boom: {fileID: 180708, guid: 803265542084941f8868d5f3312e1fea, type: 2}
 --- !u!212 &21294004
 SpriteRenderer:
   m_ObjectHideFlags: 1
