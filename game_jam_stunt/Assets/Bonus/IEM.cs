@@ -16,16 +16,26 @@ public class IEM : MonoBehaviour {
 		playerLauncher = player;
 		players = GameObject.FindGameObjectsWithTag("Player");
 		foreach(GameObject p in players){
-			p.GetComponentInChildren<Light>().enabled = false;
+			foreach(Light light in p.GetComponentsInChildren<Light>()){
+				light.enabled = false;
+			}
 		}
-		playerLauncher.GetComponentInChildren<Light> ().enabled = true;
+		foreach(Light light in playerLauncher.GetComponentsInChildren<Light>()){
+			light.enabled = true;
+			light.intensity = 8;
+
+		}
+
 		StartCoroutine (waitAndRestart(time));
 	}
 	
 	IEnumerator waitAndRestart(float waitTime) {
 		yield return new WaitForSeconds(waitTime);
-		foreach(GameObject player in players){
-			player.GetComponentInChildren<Light>().enabled = true;
+		foreach(GameObject p in players){
+			foreach(Light light in p.GetComponentsInChildren<Light>()){
+				light.enabled = true;
+				light.intensity = 7;
+			}
 		}
 		Destroy (this);
 	}
