@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 490536}
   - 212: {fileID: 21246870}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Phare haut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 469944}
-  m_Layer: 0
+  - 61: {fileID: 6166160}
+  m_Layer: 8
   m_Name: PhareSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 484504}
   - 212: {fileID: 21261450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Phare bas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.38, z: -.829999983}
+  m_LocalPosition: {x: 0, y: -1.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 469944}
@@ -85,6 +86,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 469944}
   m_RootOrder: 1
+--- !u!61 &6166160
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116716}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0661932826, y: -2.02992821}
+  serializedVersion: 2
+  m_Size: {x: 2.36799383, y: 5.05985641}
 --- !u!212 &21246870
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -110,7 +124,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 03c11ba5d949c91459dea190bb8ea66f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .558823526, g: .501297593, b: .501297593, a: 1}
 --- !u!212 &21261450
 SpriteRenderer:
   m_ObjectHideFlags: 1
