@@ -8,10 +8,16 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		gameStateManager = GameStateManager.Instance;
+		gameStateManager.gameState = GameState.Game;
+		StartCoroutine (waitAndStart (2));
+	}
 
+	IEnumerator waitAndStart(float waitTime) {
+		gameStateManager.gameState = GameState.Pause;
+		yield return new WaitForSeconds(waitTime);
 		gameStateManager.gameState = GameState.Game;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		players = GameObject.FindGameObjectsWithTag("Player");
