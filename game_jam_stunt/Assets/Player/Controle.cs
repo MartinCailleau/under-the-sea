@@ -20,7 +20,7 @@ public class Controle : MonoBehaviour {
 
 		float inputX = Input.GetAxis ("Horizontal"+playerId);
 		float inputY = Input.GetAxis ("Vertical"+playerId);
-		Debug.Log (inputX);
+
 		//float inputRotate = Input.GetAxis("Torque");
 
 		anim.SetFloat("speedX",inputX);

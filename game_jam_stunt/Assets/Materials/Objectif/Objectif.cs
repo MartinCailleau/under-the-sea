@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class End : MonoBehaviour {
-	public GameObject gameManager;
+public class Objectif : MonoBehaviour {
+	GameObject gameManager;
+	public int idObjectif;
 	// Use this for initialization
 	void Start () {
 		gameManager = GameObject.Find ("GameManager");
@@ -15,8 +16,7 @@ public class End : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collider){
 		if (collider.gameObject.tag == "Player") {
-			int playerId = collider.gameObject.GetComponent<Controle>().playerId;
-			gameManager.GetComponent<GameManager>().playerWin(playerId);
+			gameManager.GetComponent<GameManager>().playerWin(collider.gameObject,gameObject);
 		}
 	}
 }

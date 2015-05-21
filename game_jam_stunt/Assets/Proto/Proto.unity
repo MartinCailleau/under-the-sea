@@ -150,6 +150,11 @@ Prefab:
       propertyPath: spawn4
       value: 
       objectReference: {fileID: 464350500}
+    - target: {fileID: 11420292, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 11489288, guid: b3ee6146164f04e04ac841dcbdedf75d,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e79701e0ddd494f9db182eff579233ef, type: 2}
   m_IsPrefabParent: 0
@@ -733,7 +738,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!1 &1196506382 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 160462, guid: 41d08aa611f78e74b84a65b0dba0bcc6, type: 2}
@@ -764,7 +769,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
 --- !u!1 &1320668758 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 101918, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}

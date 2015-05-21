@@ -5,8 +5,10 @@ public class GameManager : MonoBehaviour {
 	public GameObject endScreenCanvas;
 	public GameObject introCanvas;
 	GameStateManager gameStateManager;
+	public Goal goal;
 	private GameObject[] players;
 	private GameObject obstacleGenerator;
+
 	// Use this for initialization
 	void Start () {
 		obstacleGenerator = GameObject.Find("ObstacleGenerator");
@@ -29,7 +31,7 @@ public class GameManager : MonoBehaviour {
 			if(Input.GetButtonDown("A1") || Input.GetButtonDown("A2") || Input.GetButtonDown("A3") || Input.GetButtonDown("A4")){
 				introCanvas.gameObject.SetActive(false);
 				stopObstacles(false);
-				StartCoroutine (waitAndStart (3));
+				StartCoroutine (waitAndStart (1));
 			}
 		}
 		
@@ -80,18 +82,22 @@ public class GameManager : MonoBehaviour {
 		endScreenCanvas.SetActive(true);
 	}
 	
-	public void playerWin(int playerId){
+	public void playerWin(GameObject player,GameObject objectif){
 		if (gameStateManager.gameState == GameState.Game) {
-			
-			Debug.Log("Player "+playerId+"win !");
-			activePlayers(false);
-			stopObstacles(true);
-			if(playerId==1) endScreen("Rouge");
-			if(playerId==2) endScreen("Vert");
-			if(playerId==3) endScreen("Jaune");
-			if(playerId==4) endScreen("Orange");
-			
-			gameStateManager.gameState = GameState.End;
+			bool win = goal.goal(player,objectif);
+			Debug.Log ("Player Win ? : "+win);
+			int playerId = player.GetComponent<Controle>().playerId;
+			if(win){
+				activePlayers(false);
+				stopObstacles(true);
+				if(playerId==1) endScreen("Rouge");
+				if(playerId==2) endScreen("Vert");
+				if(playerId==3) endScreen("Jaune");
+				if(playerId==4) endScreen("Orange");
+				gameStateManager.gameState = GameState.End;
+			}else{
+				Debug.Log ("Joueur "+playerId+" marque 1 point");
+			}
 		}
 	}
 	
