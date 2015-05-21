@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour {
 		foreach(GameObject player in players){
 
 			player.GetComponent<Controle>().enabled = active;
+			player.GetComponent<Rigidbody2D>().isKinematic = true;
 		}
 	}
 

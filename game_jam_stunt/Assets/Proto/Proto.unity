@@ -323,24 +323,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!1 &243494393 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 116716, guid: b22e8485d0ce2e54f99664ea62766d34, type: 2}
-  m_PrefabInternal: {fileID: 1055324768}
---- !u!61 &243494395
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 243494393}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: -.0661932826, y: -2.02992821}
-  serializedVersion: 2
-  m_Size: {x: 2.36799383, y: 5.05985641}
---- !u!1 &452092239 stripped
+--- !u!1 &452092239
 GameObject:
   m_PrefabParentObject: {fileID: 160462, guid: 41d08aa611f78e74b84a65b0dba0bcc6, type: 2}
   m_PrefabInternal: {fileID: 825681185}
@@ -355,11 +338,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3af85042a61fdf74ba04d76f16db5c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &462496424 stripped
+--- !u!1 &462496424
 GameObject:
   m_PrefabParentObject: {fileID: 124674, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
   m_PrefabInternal: {fileID: 716203179}
---- !u!1 &464350500 stripped
+--- !u!1 &464350500
 GameObject:
   m_PrefabParentObject: {fileID: 104430, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
   m_PrefabInternal: {fileID: 716203179}
@@ -706,30 +689,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 490536, guid: b22e8485d0ce2e54f99664ea62766d34, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 21246870, guid: b22e8485d0ce2e54f99664ea62766d34, type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a28b74874882d254db6a6f97e0c0c920, type: 2}
-    - target: {fileID: 21261450, guid: b22e8485d0ce2e54f99664ea62766d34, type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ac96bc4cef4b4bd4f9c1786372402074, type: 2}
-    - target: {fileID: 21246870, guid: b22e8485d0ce2e54f99664ea62766d34, type: 2}
-      propertyPath: m_Color.r
-      value: .558823526
-      objectReference: {fileID: 0}
-    - target: {fileID: 21246870, guid: b22e8485d0ce2e54f99664ea62766d34, type: 2}
-      propertyPath: m_Color.g
-      value: .501297593
-      objectReference: {fileID: 0}
-    - target: {fileID: 21246870, guid: b22e8485d0ce2e54f99664ea62766d34, type: 2}
-      propertyPath: m_Color.b
-      value: .501297593
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b22e8485d0ce2e54f99664ea62766d34, type: 2}
   m_IsPrefabParent: 0
@@ -759,7 +718,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!1 &1303214921
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,8 +745,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
---- !u!1 &1320668758 stripped
+  m_RootOrder: 12
+--- !u!1 &1320668758
 GameObject:
   m_PrefabParentObject: {fileID: 101918, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
   m_PrefabInternal: {fileID: 716203179}
@@ -1010,7 +969,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8415bd8b8b555714983ad038b6e602e5, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1799936176 stripped
+--- !u!1 &1799936176
 GameObject:
   m_PrefabParentObject: {fileID: 128110, guid: 8415bd8b8b555714983ad038b6e602e5, type: 2}
   m_PrefabInternal: {fileID: 1799936175}
@@ -1212,7 +1171,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 636abba74036a0d4c81fced0f660ca86, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2132379636 stripped
+--- !u!1 &2132379636
 GameObject:
   m_PrefabParentObject: {fileID: 148716, guid: 3817e228ff1af7644827cb1c2d8d9744, type: 2}
   m_PrefabInternal: {fileID: 716203179}
