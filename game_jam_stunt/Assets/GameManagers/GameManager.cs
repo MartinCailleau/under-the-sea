@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	IEnumerator waitAndStart(float waitTime) {
-		gameStateManager.gameState = GameState.Pause;
 		yield return new WaitForSeconds(waitTime);
 		gameStateManager.gameState = GameState.Game;
 	}
@@ -30,8 +29,7 @@ public class GameManager : MonoBehaviour {
 			if(Input.GetButtonDown("A1") || Input.GetButtonDown("A2") || Input.GetButtonDown("A3") || Input.GetButtonDown("A4")){
 				introCanvas.gameObject.SetActive(false);
 				stopObstacles(false);
-				StartCoroutine (waitAndStart (2));
-				gameStateManager.gameState = GameState.Game;
+				StartCoroutine (waitAndStart (3));
 			}
 		}
 		

@@ -18,7 +18,7 @@ public class PlayersManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (GameStateManager.Instance.gameState != GameState.Pause) {
+		if (GameStateManager.Instance.gameState == GameState.Game) {
 			if (Input.GetButtonDown ("A1")) {
 				if (!playerOn [0]) {
 					GameObject player = Instantiate (prefabPlayer1, spawn1.transform.position, Quaternion.identity) as GameObject;
